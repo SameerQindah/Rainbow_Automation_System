@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-05T14:57:04 EEST" name="Default suite" finished-at="2026-05-05T14:57:24 EEST" duration-ms="20473">
+  <suite started-at="2026-05-06T17:10:19 EEST" name="Default suite" finished-at="2026-05-06T17:10:41 EEST" duration-ms="22083">
     <groups>
     </groups>
-    <test started-at="2026-05-05T14:57:04 EEST" name="Default test" finished-at="2026-05-05T14:57:24 EEST" duration-ms="20473">
+    <test started-at="2026-05-06T17:10:19 EEST" name="Default test" finished-at="2026-05-06T17:10:41 EEST" duration-ms="22083">
       <class name="com.test.login2.LoginQa">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.login2.LoginQa@4f80542f]" started-at="2026-05-05T14:57:04 EEST" name="setUp" finished-at="2026-05-05T14:57:08 EEST" duration-ms="4196" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.login2.LoginQa@320e400]" started-at="2026-05-06T17:10:19 EEST" name="setUp" finished-at="2026-05-06T17:10:25 EEST" duration-ms="5583" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="invalidLogin()[pri:0, instance:com.test.login2.LoginQa@4f80542f]" started-at="2026-05-05T14:57:08 EEST" name="invalidLogin" finished-at="2026-05-05T14:57:14 EEST" duration-ms="6395" status="PASS">
+        <test-method signature="invalidLogin()[pri:0, instance:com.test.login2.LoginQa@320e400]" started-at="2026-05-06T17:10:25 EEST" name="invalidLogin" finished-at="2026-05-06T17:10:31 EEST" duration-ms="6373" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.login2.LoginQa@4f80542f]" started-at="2026-05-05T14:57:14 EEST" name="tearDown" finished-at="2026-05-05T14:57:15 EEST" duration-ms="110" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.login2.LoginQa@320e400]" started-at="2026-05-06T17:10:31 EEST" name="tearDown" finished-at="2026-05-06T17:10:32 EEST" duration-ms="203" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.login2.LoginQa@4f80542f]" started-at="2026-05-05T14:57:15 EEST" name="setUp" finished-at="2026-05-05T14:57:18 EEST" duration-ms="3219" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.login2.LoginQa@320e400]" started-at="2026-05-06T17:10:32 EEST" name="setUp" finished-at="2026-05-06T17:10:35 EEST" duration-ms="3368" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validLogin()[pri:0, instance:com.test.login2.LoginQa@4f80542f]" started-at="2026-05-05T14:57:18 EEST" name="validLogin" finished-at="2026-05-05T14:57:24 EEST" duration-ms="6380" status="PASS">
+        <test-method signature="validLogin()[pri:0, instance:com.test.login2.LoginQa@320e400]" started-at="2026-05-06T17:10:35 EEST" name="validLogin" finished-at="2026-05-06T17:10:41 EEST" duration-ms="6362" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.login2.LoginQa@4f80542f]" started-at="2026-05-05T14:57:24 EEST" name="tearDown" finished-at="2026-05-05T14:57:24 EEST" duration-ms="140" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.login2.LoginQa@320e400]" started-at="2026-05-06T17:10:41 EEST" name="tearDown" finished-at="2026-05-06T17:10:41 EEST" duration-ms="134" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
