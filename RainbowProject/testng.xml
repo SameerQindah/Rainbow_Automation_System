@@ -4,6 +4,10 @@
     <test name="Login Tests">
         <classes>
             <class name="com.test.RainbowProject.TestLogin"/>
+            <class name="com.test.RainbowProject.TestCreateBubble"/>
+            <class name="com.test.RainbowProject.TestInviteMember"/>
+            <class name="com.test.RainbowProject.TestRemoveMembers"/>
+            <class name="com.test.RainbowProject.TestDeleteBubble"/>
         </classes>
     </test>
 </suite>

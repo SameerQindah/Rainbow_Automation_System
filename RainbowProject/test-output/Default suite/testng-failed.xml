@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.test.RainbowProject.TestLogin">
+      <class name="com.test.RainbowProject.TestCreateBubble">
         <methods>
-          <include name="tearDown"/>
+          <include name="displayErrorBubbleName"/>
           <include name="openBrowser"/>
-          <include name="validLogin" invocation-numbers="0"/>
-          <include name="goToLoginPage"/>
+          <include name="tearDown"/>
+          <include name="goToMainPage"/>
         </methods>
-      </class> <!-- com.test.RainbowProject.TestLogin -->
+      </class> <!-- com.test.RainbowProject.TestCreateBubble -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -7,27 +7,14 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 import Locaters.locaersLogin;
 
-public class TestLogin extends loginPage {
-	ExtentReports extent;
-	ExtentTest test;
+public class TestLogin extends BasePage {
 
 	@BeforeClass
 	public void openBrowser() {
-
-		ExtentSparkReporter spark = new ExtentSparkReporter("test-output/ExtentReport.html");
-		extent = new ExtentReports();
-		extent.attachReporter(spark);
-
-		extent.setSystemInfo("Project Name", "Rainbow Automation");
-		extent.setSystemInfo("Tester", "Sameer Qindah");
-		extent.setSystemInfo("Browser", "Chrome");
 
 		setUp();
 	}
@@ -52,36 +39,35 @@ public class TestLogin extends loginPage {
 			TextElement(username, locaersLogin.Username);
 			test.log(Status.INFO, "Entered username");
 			Thread.sleep(5000);
-			
+
 			if (expectedResult.equals("disabledEmail")) {
 
-			    String ariaDisabled = driver.findElement(locaersLogin.ContinueButton).getAttribute("aria-disabled");
+				String ariaDisabled = driver.findElement(locaersLogin.ContinueButton).getAttribute("aria-disabled");
 
-			    AssertJUnit.assertTrue(
-			            "Continue button should be disabled when username is less than 5 characters",
-			            ariaDisabled.equals("true")
-			    );
+				AssertJUnit.assertTrue("Continue button should be disabled when username is less than 5 characters",
+						ariaDisabled.equals("true"));
 
-			    test.log(Status.PASS, "Continue button is disabled when username is less than 5 characters");
-			    return;
+				test.log(Status.PASS, "Continue button is disabled when username is less than 5 characters");
+				return;
 
-			}else if (expectedResult.equals("selectEnvironment")) { 
-				clickButton(locaersLogin.EnvironmentDropdown); 
-				clickButton(locaersLogin.SreEnvironmentOption); Thread.sleep(5000);
+			} else if (expectedResult.equals("selectEnvironment")) {
+				clickButton(locaersLogin.EnvironmentDropdown);
+				clickButton(locaersLogin.SreEnvironmentOption);
+				Thread.sleep(5000);
 
-				String actualurl = driver.getCurrentUrl(); 
-				String expectedurl = "https://web-sre-edge-lts-sbg-dev1.openrainbow.org/rb/2.161.29/index.html#/login"; 
+				String actualurl = driver.getCurrentUrl();
+				String expectedurl = "https://web-sre-edge-lts-sbg-dev1.openrainbow.org/rb/2.161.29/index.html#/login";
 
-				test.log(Status.INFO, "Actual URL: " + actualurl); test.log(Status.INFO, "Expected URL: " + expectedurl); 
-				
-				AssertJUnit.assertTrue(
-			            "Environment page did not open correctly. Actual URL: " + actualurl,
-			            actualurl.contains("web-sre-edge-lts-sbg-dev-1.openrainbow.org")
-			    );
-				
-				test.log(Status.PASS, "Environment dropdown displayed and selected and openrainbow page opened correct URL");
-				 return;
-				 }
+				test.log(Status.INFO, "Actual URL: " + actualurl);
+				test.log(Status.INFO, "Expected URL: " + expectedurl);
+
+				AssertJUnit.assertTrue("Environment page did not open correctly. Actual URL: " + actualurl,
+						actualurl.contains("web-sre-edge-lts-sbg-dev-1.openrainbow.org"));
+
+				test.log(Status.PASS,
+						"Environment dropdown displayed and selected and openrainbow page opened correct URL");
+				return;
+			}
 
 			clickButton(locaersLogin.ContinueButton);
 
@@ -90,19 +76,17 @@ public class TestLogin extends loginPage {
 			Thread.sleep(3000);
 			TextElement(password, locaersLogin.Password);
 			test.log(Status.INFO, "Entered password");
-			
+
 			if (expectedResult.equals("disabledPassword")) {
 
-			    String ariaDisabled = driver.findElement(locaersLogin.ConnectButton).getAttribute("aria-disabled");
+				String ariaDisabled = driver.findElement(locaersLogin.ConnectButton).getAttribute("aria-disabled");
 
-			    AssertJUnit.assertTrue(
-			            "Connect button should be disabled when username is less than 8 characters",
-			            ariaDisabled.equals("true")
-			    );
+				AssertJUnit.assertTrue("Connect button should be disabled when username is less than 8 characters",
+						ariaDisabled.equals("true"));
 
-			    test.log(Status.PASS, "Connect button is disabled when password is less than 8 characters");
-			    clickButton(locaersLogin.ModifyEmailButton);
-			    return;
+				test.log(Status.PASS, "Connect button is disabled when password is less than 8 characters");
+				clickButton(locaersLogin.ModifyEmailButton);
+				return;
 
 			}
 
@@ -132,22 +116,23 @@ public class TestLogin extends loginPage {
 
 		} catch (AssertionError e) {
 
-			test.log(Status.FAIL, "Test failed: " + e.getMessage());
+			test.log(Status.FAIL, "Test failed:" + e.getMessage());
 			throw e;
 
 		} catch (Exception e) {
 
-			test.log(Status.FAIL, "Test failed because of exception: " + e.getMessage());
+			test.log(Status.FAIL, "Test failed because of exception:" + e.getMessage());
 			throw e;
 		}
 	}
 
 	@DataProvider(name = "create")
 	public Object[][] dataSet1() {
-		return new Object[][] { { "mmahmoud@asaltech.com", "", "selectEnvironment" }, { "same", "", "disabledEmail" }, { "sameer", "123456", "disabledPassword" }, { "Admin", "12345678", "incorrect" },
+		return new Object[][] { { "mmahmoud@asaltech.com", "", "selectEnvironment" }, { "same", "", "disabledEmail" },
+				{ "sameer", "123456", "disabledPassword" }, { "Admin", "12345678", "incorrect" },
 				{ "sameerfaris2005@gmail.com", "Sameerqindah_123", "success" } };
 	}
-	
+
 	@Test
 	public void ForgotPassword() throws InterruptedException { // click on forgot your password because not reminder the
 																// password
@@ -347,12 +332,11 @@ public class TestLogin extends loginPage {
 			throw e;
 		}
 	}
-	
+
 	@AfterClass
 	public void tearDown() {
 
 		quit();
-		extent.flush();
 	}
 
 }

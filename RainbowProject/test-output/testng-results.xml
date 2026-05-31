@@ -1,61 +1,177 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+<testng-results ignored="0" total="19" passed="19" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-24T16:25:40 EEST" name="Rainbow Test Suite" finished-at="2026-05-24T16:28:30 EEST" duration-ms="169499">
+  <suite started-at="2026-05-31T12:49:24 EEST" name="Rainbow Test Suite" finished-at="2026-05-31T12:57:30 EEST" duration-ms="486155">
     <groups>
     </groups>
-    <test started-at="2026-05-24T16:25:40 EEST" name="Login Tests" finished-at="2026-05-24T16:28:30 EEST" duration-ms="169499">
-      <class name="com.test.RainbowProject.TestLogin">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.test.RainbowProject.TestLogin@202b0582]" started-at="2026-05-24T16:25:40 EEST" name="openBrowser" finished-at="2026-05-24T16:25:43 EEST" duration-ms="3063" status="PASS">
+    <test started-at="2026-05-31T12:49:24 EEST" name="Login Tests" finished-at="2026-05-31T12:57:30 EEST" duration-ms="486155">
+      <class name="com.test.RainbowProject.TestCreateBubble">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.test.RainbowProject.TestCreateBubble@7f485fda]" started-at="2026-05-31T12:52:09 EEST" name="openBrowser" finished-at="2026-05-31T12:52:23 EEST" duration-ms="13857" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@202b0582]" started-at="2026-05-24T16:25:43 EEST" name="goToLoginPage" finished-at="2026-05-24T16:25:52 EEST" duration-ms="8508" status="PASS">
+        <test-method is-config="true" signature="goToMainPage()[pri:0, instance:com.test.RainbowProject.TestCreateBubble@7f485fda]" started-at="2026-05-31T12:52:23 EEST" name="goToMainPage" finished-at="2026-05-31T12:52:40 EEST" duration-ms="17207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToMainPage -->
+        <test-method signature="CancelCreateBubble()[pri:0, instance:com.test.RainbowProject.TestCreateBubble@7f485fda]" started-at="2026-05-31T12:52:40 EEST" name="CancelCreateBubble" finished-at="2026-05-31T12:52:54 EEST" duration-ms="14369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CancelCreateBubble -->
+        <test-method is-config="true" signature="goToMainPage()[pri:0, instance:com.test.RainbowProject.TestCreateBubble@7f485fda]" started-at="2026-05-31T12:52:54 EEST" name="goToMainPage" finished-at="2026-05-31T12:53:12 EEST" duration-ms="17115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToMainPage -->
+        <test-method signature="InValidCreateBubble()[pri:0, instance:com.test.RainbowProject.TestCreateBubble@7f485fda]" started-at="2026-05-31T12:53:12 EEST" name="InValidCreateBubble" finished-at="2026-05-31T12:53:34 EEST" duration-ms="21993" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InValidCreateBubble -->
+        <test-method is-config="true" signature="goToMainPage()[pri:0, instance:com.test.RainbowProject.TestCreateBubble@7f485fda]" started-at="2026-05-31T12:53:34 EEST" name="goToMainPage" finished-at="2026-05-31T12:53:51 EEST" duration-ms="17110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToMainPage -->
+        <test-method signature="ValidCreateBubble()[pri:0, instance:com.test.RainbowProject.TestCreateBubble@7f485fda]" started-at="2026-05-31T12:53:51 EEST" name="ValidCreateBubble" finished-at="2026-05-31T12:54:18 EEST" duration-ms="26949" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidCreateBubble -->
+        <test-method is-config="true" signature="goToMainPage()[pri:0, instance:com.test.RainbowProject.TestCreateBubble@7f485fda]" started-at="2026-05-31T12:54:18 EEST" name="goToMainPage" finished-at="2026-05-31T12:54:35 EEST" duration-ms="17196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToMainPage -->
+        <test-method signature="displayErrorBubbleName()[pri:0, instance:com.test.RainbowProject.TestCreateBubble@7f485fda]" started-at="2026-05-31T12:54:35 EEST" name="displayErrorBubbleName" finished-at="2026-05-31T12:54:40 EEST" duration-ms="5182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- displayErrorBubbleName -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.RainbowProject.TestCreateBubble@7f485fda]" started-at="2026-05-31T12:54:40 EEST" name="tearDown" finished-at="2026-05-31T12:54:40 EEST" duration-ms="210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.test.RainbowProject.TestCreateBubble -->
+      <class name="com.test.RainbowProject.TestInviteMember">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.test.RainbowProject.TestInviteMember@28261e8e]" started-at="2026-05-31T12:54:40 EEST" name="openBrowser" finished-at="2026-05-31T12:54:54 EEST" duration-ms="14122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="goToMainPage()[pri:0, instance:com.test.RainbowProject.TestInviteMember@28261e8e]" started-at="2026-05-31T12:54:54 EEST" name="goToMainPage" finished-at="2026-05-31T12:55:09 EEST" duration-ms="15200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToMainPage -->
+        <test-method signature="InValidInviteMember()[pri:0, instance:com.test.RainbowProject.TestInviteMember@28261e8e]" started-at="2026-05-31T12:55:09 EEST" name="InValidInviteMember" finished-at="2026-05-31T12:55:22 EEST" duration-ms="12352" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InValidInviteMember -->
+        <test-method is-config="true" signature="goToMainPage()[pri:0, instance:com.test.RainbowProject.TestInviteMember@28261e8e]" started-at="2026-05-31T12:55:22 EEST" name="goToMainPage" finished-at="2026-05-31T12:55:37 EEST" duration-ms="15181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToMainPage -->
+        <test-method signature="ValidInviteMember()[pri:0, instance:com.test.RainbowProject.TestInviteMember@28261e8e]" started-at="2026-05-31T12:55:37 EEST" name="ValidInviteMember" finished-at="2026-05-31T12:55:49 EEST" duration-ms="12326" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidInviteMember -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.RainbowProject.TestInviteMember@28261e8e]" started-at="2026-05-31T12:55:49 EEST" name="tearDown" finished-at="2026-05-31T12:55:50 EEST" duration-ms="203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.test.RainbowProject.TestInviteMember -->
+      <class name="com.test.RainbowProject.TestDeleteBubble">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.test.RainbowProject.TestDeleteBubble@8519cb4]" started-at="2026-05-31T12:56:33 EEST" name="openBrowser" finished-at="2026-05-31T12:56:47 EEST" duration-ms="14184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="goToMainPage()[pri:0, instance:com.test.RainbowProject.TestDeleteBubble@8519cb4]" started-at="2026-05-31T12:56:47 EEST" name="goToMainPage" finished-at="2026-05-31T12:56:57 EEST" duration-ms="10137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToMainPage -->
+        <test-method signature="InValidDeleteBubble()[pri:0, instance:com.test.RainbowProject.TestDeleteBubble@8519cb4]" started-at="2026-05-31T12:56:57 EEST" name="InValidDeleteBubble" finished-at="2026-05-31T12:57:09 EEST" duration-ms="11290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InValidDeleteBubble -->
+        <test-method is-config="true" signature="goToMainPage()[pri:0, instance:com.test.RainbowProject.TestDeleteBubble@8519cb4]" started-at="2026-05-31T12:57:09 EEST" name="goToMainPage" finished-at="2026-05-31T12:57:19 EEST" duration-ms="10064" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToMainPage -->
+        <test-method signature="ValidDeleteBubble()[pri:0, instance:com.test.RainbowProject.TestDeleteBubble@8519cb4]" started-at="2026-05-31T12:57:19 EEST" name="ValidDeleteBubble" finished-at="2026-05-31T12:57:30 EEST" duration-ms="11233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidDeleteBubble -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.RainbowProject.TestDeleteBubble@8519cb4]" started-at="2026-05-31T12:57:30 EEST" name="tearDown" finished-at="2026-05-31T12:57:30 EEST" duration-ms="225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.test.RainbowProject.TestDeleteBubble -->
+      <class name="com.test.RainbowProject.TestRemoveMembers">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.test.RainbowProject.TestRemoveMembers@d737b89]" started-at="2026-05-31T12:55:50 EEST" name="openBrowser" finished-at="2026-05-31T12:56:03 EEST" duration-ms="13702" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="goToMainPage()[pri:0, instance:com.test.RainbowProject.TestRemoveMembers@d737b89]" started-at="2026-05-31T12:56:03 EEST" name="goToMainPage" finished-at="2026-05-31T12:56:18 EEST" duration-ms="15210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToMainPage -->
+        <test-method signature="ValidRemoveMember()[pri:0, instance:com.test.RainbowProject.TestRemoveMembers@d737b89]" started-at="2026-05-31T12:56:18 EEST" name="ValidRemoveMember" finished-at="2026-05-31T12:56:33 EEST" duration-ms="14372" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidRemoveMember -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.RainbowProject.TestRemoveMembers@d737b89]" started-at="2026-05-31T12:56:33 EEST" name="tearDown" finished-at="2026-05-31T12:56:33 EEST" duration-ms="224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.test.RainbowProject.TestRemoveMembers -->
+      <class name="com.test.RainbowProject.TestLogin">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:49:24 EEST" name="setupReport" finished-at="2026-05-31T12:49:24 EEST" duration-ms="173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupReport -->
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:49:24 EEST" name="openBrowser" finished-at="2026-05-31T12:49:27 EEST" duration-ms="2702" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:49:27 EEST" name="goToLoginPage" finished-at="2026-05-31T12:49:31 EEST" duration-ms="4205" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToLoginPage -->
-        <test-method signature="DontHaveAnAccountSignUp()[pri:0, instance:com.test.RainbowProject.TestLogin@202b0582]" started-at="2026-05-24T16:25:52 EEST" name="DontHaveAnAccountSignUp" finished-at="2026-05-24T16:25:58 EEST" duration-ms="6141" status="PASS">
+        <test-method signature="DontHaveAnAccountSignUp()[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:49:31 EEST" name="DontHaveAnAccountSignUp" finished-at="2026-05-31T12:49:37 EEST" duration-ms="6173" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DontHaveAnAccountSignUp -->
-        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@202b0582]" started-at="2026-05-24T16:25:58 EEST" name="goToLoginPage" finished-at="2026-05-24T16:25:58 EEST" duration-ms="30" status="PASS">
+        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:49:37 EEST" name="goToLoginPage" finished-at="2026-05-31T12:49:37 EEST" duration-ms="233" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToLoginPage -->
-        <test-method signature="ForgotPassword()[pri:0, instance:com.test.RainbowProject.TestLogin@202b0582]" started-at="2026-05-24T16:25:58 EEST" name="ForgotPassword" finished-at="2026-05-24T16:26:14 EEST" duration-ms="16405" status="PASS">
+        <test-method signature="ForgotPassword()[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:49:37 EEST" name="ForgotPassword" finished-at="2026-05-31T12:49:54 EEST" duration-ms="16549" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ForgotPassword -->
-        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@202b0582]" started-at="2026-05-24T16:26:14 EEST" name="goToLoginPage" finished-at="2026-05-24T16:26:14 EEST" duration-ms="25" status="PASS">
+        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:49:54 EEST" name="goToLoginPage" finished-at="2026-05-31T12:49:54 EEST" duration-ms="229" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToLoginPage -->
-        <test-method signature="LearnMoreLinkAboutRainbow()[pri:0, instance:com.test.RainbowProject.TestLogin@202b0582]" started-at="2026-05-24T16:26:14 EEST" name="LearnMoreLinkAboutRainbow" finished-at="2026-05-24T16:26:23 EEST" duration-ms="8193" status="PASS">
+        <test-method signature="LearnMoreLinkAboutRainbow()[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:49:54 EEST" name="LearnMoreLinkAboutRainbow" finished-at="2026-05-31T12:50:02 EEST" duration-ms="8208" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LearnMoreLinkAboutRainbow -->
-        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@202b0582]" started-at="2026-05-24T16:26:23 EEST" name="goToLoginPage" finished-at="2026-05-24T16:26:23 EEST" duration-ms="72" status="PASS">
+        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:50:02 EEST" name="goToLoginPage" finished-at="2026-05-31T12:50:03 EEST" duration-ms="245" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToLoginPage -->
-        <test-method signature="ThePrivacyPolicy()[pri:0, instance:com.test.RainbowProject.TestLogin@202b0582]" started-at="2026-05-24T16:26:23 EEST" name="ThePrivacyPolicy" finished-at="2026-05-24T16:26:31 EEST" duration-ms="8505" status="PASS">
+        <test-method signature="ThePrivacyPolicy()[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:50:03 EEST" name="ThePrivacyPolicy" finished-at="2026-05-31T12:50:11 EEST" duration-ms="8695" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ThePrivacyPolicy -->
-        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@202b0582]" started-at="2026-05-24T16:26:31 EEST" name="goToLoginPage" finished-at="2026-05-24T16:26:31 EEST" duration-ms="12" status="PASS">
+        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:50:11 EEST" name="goToLoginPage" finished-at="2026-05-31T12:50:12 EEST" duration-ms="223" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToLoginPage -->
-        <test-method signature="TheTermsOfService()[pri:0, instance:com.test.RainbowProject.TestLogin@202b0582]" started-at="2026-05-24T16:26:31 EEST" name="TheTermsOfService" finished-at="2026-05-24T16:26:39 EEST" duration-ms="8181" status="PASS">
+        <test-method signature="TheTermsOfService()[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:50:12 EEST" name="TheTermsOfService" finished-at="2026-05-31T12:50:20 EEST" duration-ms="8260" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TheTermsOfService -->
-        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@202b0582]" started-at="2026-05-24T16:26:39 EEST" name="goToLoginPage" finished-at="2026-05-24T16:26:39 EEST" duration-ms="84" status="PASS">
+        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:50:20 EEST" name="goToLoginPage" finished-at="2026-05-31T12:50:20 EEST" duration-ms="358" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToLoginPage -->
-        <test-method signature="validLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.RainbowProject.TestLogin@202b0582]" started-at="2026-05-24T16:26:39 EEST" name="validLogin" data-provider="create" finished-at="2026-05-24T16:26:55 EEST" duration-ms="15366" status="PASS">
+        <test-method signature="validLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:50:20 EEST" name="validLogin" data-provider="create" finished-at="2026-05-31T12:50:36 EEST" duration-ms="15410" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -76,11 +192,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLogin -->
-        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@202b0582]" started-at="2026-05-24T16:26:55 EEST" name="goToLoginPage" finished-at="2026-05-24T16:26:57 EEST" duration-ms="2588" status="PASS">
+        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:50:36 EEST" name="goToLoginPage" finished-at="2026-05-31T12:50:36 EEST" duration-ms="581" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToLoginPage -->
-        <test-method signature="validLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.RainbowProject.TestLogin@202b0582]" started-at="2026-05-24T16:26:57 EEST" name="validLogin" data-provider="create" finished-at="2026-05-24T16:27:08 EEST" duration-ms="10186" status="PASS">
+        <test-method signature="validLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:50:36 EEST" name="validLogin" data-provider="create" finished-at="2026-05-31T12:50:46 EEST" duration-ms="10157" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -101,11 +217,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLogin -->
-        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@202b0582]" started-at="2026-05-24T16:27:08 EEST" name="goToLoginPage" finished-at="2026-05-24T16:27:08 EEST" duration-ms="9" status="PASS">
+        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:50:46 EEST" name="goToLoginPage" finished-at="2026-05-31T12:50:47 EEST" duration-ms="305" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToLoginPage -->
-        <test-method signature="validLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.RainbowProject.TestLogin@202b0582]" started-at="2026-05-24T16:27:08 EEST" name="validLogin" data-provider="create" finished-at="2026-05-24T16:27:21 EEST" duration-ms="13337" status="PASS">
+        <test-method signature="validLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:50:47 EEST" name="validLogin" data-provider="create" finished-at="2026-05-31T12:51:00 EEST" duration-ms="13309" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -126,11 +242,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLogin -->
-        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@202b0582]" started-at="2026-05-24T16:27:21 EEST" name="goToLoginPage" finished-at="2026-05-24T16:27:21 EEST" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:51:00 EEST" name="goToLoginPage" finished-at="2026-05-31T12:51:00 EEST" duration-ms="318" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToLoginPage -->
-        <test-method signature="validLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.RainbowProject.TestLogin@202b0582]" started-at="2026-05-24T16:27:21 EEST" name="validLogin" data-provider="create" finished-at="2026-05-24T16:27:43 EEST" duration-ms="21641" status="PASS">
+        <test-method signature="validLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:51:00 EEST" name="validLogin" data-provider="create" finished-at="2026-05-31T12:51:22 EEST" duration-ms="21626" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -151,11 +267,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLogin -->
-        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@202b0582]" started-at="2026-05-24T16:27:43 EEST" name="goToLoginPage" finished-at="2026-05-24T16:27:43 EEST" duration-ms="24" status="PASS">
+        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:51:22 EEST" name="goToLoginPage" finished-at="2026-05-31T12:51:22 EEST" duration-ms="402" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToLoginPage -->
-        <test-method signature="validLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.RainbowProject.TestLogin@202b0582]" started-at="2026-05-24T16:27:43 EEST" name="validLogin" data-provider="create" finished-at="2026-05-24T16:28:29 EEST" duration-ms="46402" status="PASS">
+        <test-method signature="validLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:51:22 EEST" name="validLogin" data-provider="create" finished-at="2026-05-31T12:52:09 EEST" duration-ms="46344" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -176,10 +292,14 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.RainbowProject.TestLogin@202b0582]" started-at="2026-05-24T16:28:29 EEST" name="tearDown" finished-at="2026-05-24T16:28:30 EEST" duration-ms="668" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:52:09 EEST" name="tearDown" finished-at="2026-05-31T12:52:09 EEST" duration-ms="349" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:57:30 EEST" name="tearDownReport" finished-at="2026-05-31T12:57:31 EEST" duration-ms="278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownReport -->
       </class> <!-- com.test.RainbowProject.TestLogin -->
     </test> <!-- Login Tests -->
   </suite> <!-- Rainbow Test Suite -->
