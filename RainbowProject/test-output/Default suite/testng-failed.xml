@@ -5,9 +5,11 @@
     <classes>
       <class name="com.test.RainbowProject.TestCreateBubble">
         <methods>
-          <include name="displayErrorBubbleName"/>
+          <include name="ValidCreateBubble"/>
           <include name="openBrowser"/>
           <include name="tearDown"/>
+          <include name="setupReport"/>
+          <include name="tearDownReport"/>
           <include name="goToMainPage"/>
         </methods>
       </class> <!-- com.test.RainbowProject.TestCreateBubble -->

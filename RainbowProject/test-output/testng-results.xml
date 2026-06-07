@@ -1,202 +1,909 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="19" passed="19" failed="0" skipped="0">
+<testng-results ignored="0" total="19" passed="9" failed="5" skipped="5">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-31T12:49:24 EEST" name="Rainbow Test Suite" finished-at="2026-05-31T12:57:30 EEST" duration-ms="486155">
+  <suite started-at="2026-06-05T01:06:00 EEST" name="Rainbow Test Suite" finished-at="2026-06-05T01:08:43 EEST" duration-ms="162162">
     <groups>
     </groups>
-    <test started-at="2026-05-31T12:49:24 EEST" name="Login Tests" finished-at="2026-05-31T12:57:30 EEST" duration-ms="486155">
+    <test started-at="2026-06-05T01:06:00 EEST" name="Login Tests" finished-at="2026-06-05T01:08:43 EEST" duration-ms="162162">
       <class name="com.test.RainbowProject.TestCreateBubble">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.test.RainbowProject.TestCreateBubble@7f485fda]" started-at="2026-05-31T12:52:09 EEST" name="openBrowser" finished-at="2026-05-31T12:52:23 EEST" duration-ms="13857" status="PASS">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.test.RainbowProject.TestCreateBubble@53b98ff6]" started-at="2026-06-05T01:07:18 EEST" name="openBrowser" finished-at="2026-06-05T01:07:41 EEST" duration-ms="22722" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="goToMainPage()[pri:0, instance:com.test.RainbowProject.TestCreateBubble@7f485fda]" started-at="2026-05-31T12:52:23 EEST" name="goToMainPage" finished-at="2026-05-31T12:52:40 EEST" duration-ms="17207" status="PASS">
+        <test-method is-config="true" signature="goToMainPage()[pri:0, instance:com.test.RainbowProject.TestCreateBubble@53b98ff6]" started-at="2026-06-05T01:07:41 EEST" name="goToMainPage" finished-at="2026-06-05T01:07:42 EEST" duration-ms="1549" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <rb-button id="rooms-header-create-bubble-button" customclass="c-button--responsive" responsiveicon="add" type="primary" rbtooltip="createWorkgroup" tooltipposition="bottom">...</rb-button> is not clickable at point (1696, 23). Other element would receive the click: <div _ngcontent-ng-c4290628622="" class="ngx-spinner-overlay fade-out" style="background-color: rgba(0, 0, 0, 0.59); z-index: 99999; position: absolute;">...</div>
+  (Session info: chrome=149.0.7827.53)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '26.3.1', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d3e8811bfd4aa79133f8925d4203efdb, clickElement {id=f.ADD8A08C9E96C67BFF87A54ACA92F9B1.d.48BD3C2072EC75E7E9812AFD7F170030.e.147}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.53, chrome: {chromedriverVersion: 149.0.7827.54 (42ce21f112d0..., userDataDir: /var/folders/sl/15v965y142g...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55219}, goog:processID: 19525, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55219/devtoo..., se:cdpVersion: 149.0.7827.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (d3e8811bfd4aa79133f8925d4203efdb)] -> id: rooms-header-create-bubble-button]
+Session ID: d3e8811bfd4aa79133f8925d4203efdb]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <rb-button id="rooms-header-create-bubble-button" customclass="c-button--responsive" responsiveicon="add" type="primary" rbtooltip="createWorkgroup" tooltipposition="bottom">...</rb-button> is not clickable at point (1696, 23). Other element would receive the click: <div _ngcontent-ng-c4290628622="" class="ngx-spinner-overlay fade-out" style="background-color: rgba(0, 0, 0, 0.59); z-index: 99999; position: absolute;">...</div>
+  (Session info: chrome=149.0.7827.53)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '26.3.1', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d3e8811bfd4aa79133f8925d4203efdb, clickElement {id=f.ADD8A08C9E96C67BFF87A54ACA92F9B1.d.48BD3C2072EC75E7E9812AFD7F170030.e.147}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.53, chrome: {chromedriverVersion: 149.0.7827.54 (42ce21f112d0..., userDataDir: /var/folders/sl/15v965y142g...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55219}, goog:processID: 19525, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55219/devtoo..., se:cdpVersion: 149.0.7827.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (d3e8811bfd4aa79133f8925d4203efdb)] -> id: rooms-header-create-bubble-button]
+Session ID: d3e8811bfd4aa79133f8925d4203efdb
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at com.test.RainbowProject.BasePage.clickButton(BasePage.java:89)
+at com.test.RainbowProject.CreateBubblePage.clickOnCreateBubbleButton(CreateBubblePage.java:8)
+at com.test.RainbowProject.TestCreateBubble.goToMainPage(TestCreateBubble.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToMainPage -->
-        <test-method signature="CancelCreateBubble()[pri:0, instance:com.test.RainbowProject.TestCreateBubble@7f485fda]" started-at="2026-05-31T12:52:40 EEST" name="CancelCreateBubble" finished-at="2026-05-31T12:52:54 EEST" duration-ms="14369" status="PASS">
+        <test-method signature="CancelCreateBubble()[pri:0, instance:com.test.RainbowProject.TestCreateBubble@53b98ff6]" started-at="2026-06-05T01:07:42 EEST" name="CancelCreateBubble" finished-at="2026-06-05T01:07:42 EEST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <rb-button id="rooms-header-create-bubble-button" customclass="c-button--responsive" responsiveicon="add" type="primary" rbtooltip="createWorkgroup" tooltipposition="bottom">...</rb-button> is not clickable at point (1696, 23). Other element would receive the click: <div _ngcontent-ng-c4290628622="" class="ngx-spinner-overlay fade-out" style="background-color: rgba(0, 0, 0, 0.59); z-index: 99999; position: absolute;">...</div>
+  (Session info: chrome=149.0.7827.53)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '26.3.1', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d3e8811bfd4aa79133f8925d4203efdb, clickElement {id=f.ADD8A08C9E96C67BFF87A54ACA92F9B1.d.48BD3C2072EC75E7E9812AFD7F170030.e.147}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.53, chrome: {chromedriverVersion: 149.0.7827.54 (42ce21f112d0..., userDataDir: /var/folders/sl/15v965y142g...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55219}, goog:processID: 19525, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55219/devtoo..., se:cdpVersion: 149.0.7827.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (d3e8811bfd4aa79133f8925d4203efdb)] -> id: rooms-header-create-bubble-button]
+Session ID: d3e8811bfd4aa79133f8925d4203efdb]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <rb-button id="rooms-header-create-bubble-button" customclass="c-button--responsive" responsiveicon="add" type="primary" rbtooltip="createWorkgroup" tooltipposition="bottom">...</rb-button> is not clickable at point (1696, 23). Other element would receive the click: <div _ngcontent-ng-c4290628622="" class="ngx-spinner-overlay fade-out" style="background-color: rgba(0, 0, 0, 0.59); z-index: 99999; position: absolute;">...</div>
+  (Session info: chrome=149.0.7827.53)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '26.3.1', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d3e8811bfd4aa79133f8925d4203efdb, clickElement {id=f.ADD8A08C9E96C67BFF87A54ACA92F9B1.d.48BD3C2072EC75E7E9812AFD7F170030.e.147}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.53, chrome: {chromedriverVersion: 149.0.7827.54 (42ce21f112d0..., userDataDir: /var/folders/sl/15v965y142g...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55219}, goog:processID: 19525, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55219/devtoo..., se:cdpVersion: 149.0.7827.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (d3e8811bfd4aa79133f8925d4203efdb)] -> id: rooms-header-create-bubble-button]
+Session ID: d3e8811bfd4aa79133f8925d4203efdb
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at com.test.RainbowProject.BasePage.clickButton(BasePage.java:89)
+at com.test.RainbowProject.CreateBubblePage.clickOnCreateBubbleButton(CreateBubblePage.java:8)
+at com.test.RainbowProject.TestCreateBubble.goToMainPage(TestCreateBubble.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CancelCreateBubble -->
-        <test-method is-config="true" signature="goToMainPage()[pri:0, instance:com.test.RainbowProject.TestCreateBubble@7f485fda]" started-at="2026-05-31T12:52:54 EEST" name="goToMainPage" finished-at="2026-05-31T12:53:12 EEST" duration-ms="17115" status="PASS">
+        <test-method is-config="true" signature="goToMainPage()[pri:0, instance:com.test.RainbowProject.TestCreateBubble@53b98ff6]" started-at="2026-06-05T01:07:42 EEST" name="goToMainPage" finished-at="2026-06-05T01:07:42 EEST" duration-ms="152" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToMainPage -->
-        <test-method signature="InValidCreateBubble()[pri:0, instance:com.test.RainbowProject.TestCreateBubble@7f485fda]" started-at="2026-05-31T12:53:12 EEST" name="InValidCreateBubble" finished-at="2026-05-31T12:53:34 EEST" duration-ms="21993" status="PASS">
+        <test-method signature="InValidCreateBubble()[pri:0, instance:com.test.RainbowProject.TestCreateBubble@53b98ff6]" started-at="2026-06-05T01:07:42 EEST" name="InValidCreateBubble" finished-at="2026-06-05T01:07:42 EEST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <rb-button id="rooms-header-create-bubble-button" customclass="c-button--responsive" responsiveicon="add" type="primary" rbtooltip="createWorkgroup" tooltipposition="bottom">...</rb-button> is not clickable at point (1696, 23). Other element would receive the click: <div _ngcontent-ng-c4290628622="" class="ngx-spinner-overlay fade-out" style="background-color: rgba(0, 0, 0, 0.59); z-index: 99999; position: absolute;">...</div>
+  (Session info: chrome=149.0.7827.53)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '26.3.1', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d3e8811bfd4aa79133f8925d4203efdb, clickElement {id=f.ADD8A08C9E96C67BFF87A54ACA92F9B1.d.48BD3C2072EC75E7E9812AFD7F170030.e.147}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.53, chrome: {chromedriverVersion: 149.0.7827.54 (42ce21f112d0..., userDataDir: /var/folders/sl/15v965y142g...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55219}, goog:processID: 19525, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55219/devtoo..., se:cdpVersion: 149.0.7827.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (d3e8811bfd4aa79133f8925d4203efdb)] -> id: rooms-header-create-bubble-button]
+Session ID: d3e8811bfd4aa79133f8925d4203efdb]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <rb-button id="rooms-header-create-bubble-button" customclass="c-button--responsive" responsiveicon="add" type="primary" rbtooltip="createWorkgroup" tooltipposition="bottom">...</rb-button> is not clickable at point (1696, 23). Other element would receive the click: <div _ngcontent-ng-c4290628622="" class="ngx-spinner-overlay fade-out" style="background-color: rgba(0, 0, 0, 0.59); z-index: 99999; position: absolute;">...</div>
+  (Session info: chrome=149.0.7827.53)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '26.3.1', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d3e8811bfd4aa79133f8925d4203efdb, clickElement {id=f.ADD8A08C9E96C67BFF87A54ACA92F9B1.d.48BD3C2072EC75E7E9812AFD7F170030.e.147}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.53, chrome: {chromedriverVersion: 149.0.7827.54 (42ce21f112d0..., userDataDir: /var/folders/sl/15v965y142g...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55219}, goog:processID: 19525, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55219/devtoo..., se:cdpVersion: 149.0.7827.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (d3e8811bfd4aa79133f8925d4203efdb)] -> id: rooms-header-create-bubble-button]
+Session ID: d3e8811bfd4aa79133f8925d4203efdb
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at com.test.RainbowProject.BasePage.clickButton(BasePage.java:89)
+at com.test.RainbowProject.CreateBubblePage.clickOnCreateBubbleButton(CreateBubblePage.java:8)
+at com.test.RainbowProject.TestCreateBubble.goToMainPage(TestCreateBubble.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InValidCreateBubble -->
-        <test-method is-config="true" signature="goToMainPage()[pri:0, instance:com.test.RainbowProject.TestCreateBubble@7f485fda]" started-at="2026-05-31T12:53:34 EEST" name="goToMainPage" finished-at="2026-05-31T12:53:51 EEST" duration-ms="17110" status="PASS">
+        <test-method is-config="true" signature="goToMainPage()[pri:0, instance:com.test.RainbowProject.TestCreateBubble@53b98ff6]" started-at="2026-06-05T01:07:42 EEST" name="goToMainPage" finished-at="2026-06-05T01:07:42 EEST" duration-ms="119" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToMainPage -->
-        <test-method signature="ValidCreateBubble()[pri:0, instance:com.test.RainbowProject.TestCreateBubble@7f485fda]" started-at="2026-05-31T12:53:51 EEST" name="ValidCreateBubble" finished-at="2026-05-31T12:54:18 EEST" duration-ms="26949" status="PASS">
+        <test-method signature="ValidCreateBubble()[pri:0, instance:com.test.RainbowProject.TestCreateBubble@53b98ff6]" started-at="2026-06-05T01:07:42 EEST" name="ValidCreateBubble" finished-at="2026-06-05T01:07:42 EEST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <rb-button id="rooms-header-create-bubble-button" customclass="c-button--responsive" responsiveicon="add" type="primary" rbtooltip="createWorkgroup" tooltipposition="bottom">...</rb-button> is not clickable at point (1696, 23). Other element would receive the click: <div _ngcontent-ng-c4290628622="" class="ngx-spinner-overlay fade-out" style="background-color: rgba(0, 0, 0, 0.59); z-index: 99999; position: absolute;">...</div>
+  (Session info: chrome=149.0.7827.53)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '26.3.1', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d3e8811bfd4aa79133f8925d4203efdb, clickElement {id=f.ADD8A08C9E96C67BFF87A54ACA92F9B1.d.48BD3C2072EC75E7E9812AFD7F170030.e.147}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.53, chrome: {chromedriverVersion: 149.0.7827.54 (42ce21f112d0..., userDataDir: /var/folders/sl/15v965y142g...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55219}, goog:processID: 19525, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55219/devtoo..., se:cdpVersion: 149.0.7827.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (d3e8811bfd4aa79133f8925d4203efdb)] -> id: rooms-header-create-bubble-button]
+Session ID: d3e8811bfd4aa79133f8925d4203efdb]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <rb-button id="rooms-header-create-bubble-button" customclass="c-button--responsive" responsiveicon="add" type="primary" rbtooltip="createWorkgroup" tooltipposition="bottom">...</rb-button> is not clickable at point (1696, 23). Other element would receive the click: <div _ngcontent-ng-c4290628622="" class="ngx-spinner-overlay fade-out" style="background-color: rgba(0, 0, 0, 0.59); z-index: 99999; position: absolute;">...</div>
+  (Session info: chrome=149.0.7827.53)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '26.3.1', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d3e8811bfd4aa79133f8925d4203efdb, clickElement {id=f.ADD8A08C9E96C67BFF87A54ACA92F9B1.d.48BD3C2072EC75E7E9812AFD7F170030.e.147}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.53, chrome: {chromedriverVersion: 149.0.7827.54 (42ce21f112d0..., userDataDir: /var/folders/sl/15v965y142g...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55219}, goog:processID: 19525, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55219/devtoo..., se:cdpVersion: 149.0.7827.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (d3e8811bfd4aa79133f8925d4203efdb)] -> id: rooms-header-create-bubble-button]
+Session ID: d3e8811bfd4aa79133f8925d4203efdb
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at com.test.RainbowProject.BasePage.clickButton(BasePage.java:89)
+at com.test.RainbowProject.CreateBubblePage.clickOnCreateBubbleButton(CreateBubblePage.java:8)
+at com.test.RainbowProject.TestCreateBubble.goToMainPage(TestCreateBubble.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidCreateBubble -->
-        <test-method is-config="true" signature="goToMainPage()[pri:0, instance:com.test.RainbowProject.TestCreateBubble@7f485fda]" started-at="2026-05-31T12:54:18 EEST" name="goToMainPage" finished-at="2026-05-31T12:54:35 EEST" duration-ms="17196" status="PASS">
+        <test-method is-config="true" signature="goToMainPage()[pri:0, instance:com.test.RainbowProject.TestCreateBubble@53b98ff6]" started-at="2026-06-05T01:07:42 EEST" name="goToMainPage" finished-at="2026-06-05T01:07:42 EEST" duration-ms="115" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToMainPage -->
-        <test-method signature="displayErrorBubbleName()[pri:0, instance:com.test.RainbowProject.TestCreateBubble@7f485fda]" started-at="2026-05-31T12:54:35 EEST" name="displayErrorBubbleName" finished-at="2026-05-31T12:54:40 EEST" duration-ms="5182" status="PASS">
+        <test-method signature="displayErrorBubbleName()[pri:0, instance:com.test.RainbowProject.TestCreateBubble@53b98ff6]" started-at="2026-06-05T01:07:42 EEST" name="displayErrorBubbleName" finished-at="2026-06-05T01:07:42 EEST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <rb-button id="rooms-header-create-bubble-button" customclass="c-button--responsive" responsiveicon="add" type="primary" rbtooltip="createWorkgroup" tooltipposition="bottom">...</rb-button> is not clickable at point (1696, 23). Other element would receive the click: <div _ngcontent-ng-c4290628622="" class="ngx-spinner-overlay fade-out" style="background-color: rgba(0, 0, 0, 0.59); z-index: 99999; position: absolute;">...</div>
+  (Session info: chrome=149.0.7827.53)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '26.3.1', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d3e8811bfd4aa79133f8925d4203efdb, clickElement {id=f.ADD8A08C9E96C67BFF87A54ACA92F9B1.d.48BD3C2072EC75E7E9812AFD7F170030.e.147}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.53, chrome: {chromedriverVersion: 149.0.7827.54 (42ce21f112d0..., userDataDir: /var/folders/sl/15v965y142g...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55219}, goog:processID: 19525, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55219/devtoo..., se:cdpVersion: 149.0.7827.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (d3e8811bfd4aa79133f8925d4203efdb)] -> id: rooms-header-create-bubble-button]
+Session ID: d3e8811bfd4aa79133f8925d4203efdb]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <rb-button id="rooms-header-create-bubble-button" customclass="c-button--responsive" responsiveicon="add" type="primary" rbtooltip="createWorkgroup" tooltipposition="bottom">...</rb-button> is not clickable at point (1696, 23). Other element would receive the click: <div _ngcontent-ng-c4290628622="" class="ngx-spinner-overlay fade-out" style="background-color: rgba(0, 0, 0, 0.59); z-index: 99999; position: absolute;">...</div>
+  (Session info: chrome=149.0.7827.53)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '26.3.1', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d3e8811bfd4aa79133f8925d4203efdb, clickElement {id=f.ADD8A08C9E96C67BFF87A54ACA92F9B1.d.48BD3C2072EC75E7E9812AFD7F170030.e.147}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.53, chrome: {chromedriverVersion: 149.0.7827.54 (42ce21f112d0..., userDataDir: /var/folders/sl/15v965y142g...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55219}, goog:processID: 19525, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55219/devtoo..., se:cdpVersion: 149.0.7827.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (d3e8811bfd4aa79133f8925d4203efdb)] -> id: rooms-header-create-bubble-button]
+Session ID: d3e8811bfd4aa79133f8925d4203efdb
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at com.test.RainbowProject.BasePage.clickButton(BasePage.java:89)
+at com.test.RainbowProject.CreateBubblePage.clickOnCreateBubbleButton(CreateBubblePage.java:8)
+at com.test.RainbowProject.TestCreateBubble.goToMainPage(TestCreateBubble.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- displayErrorBubbleName -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.RainbowProject.TestCreateBubble@7f485fda]" started-at="2026-05-31T12:54:40 EEST" name="tearDown" finished-at="2026-05-31T12:54:40 EEST" duration-ms="210" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.RainbowProject.TestCreateBubble@53b98ff6]" started-at="2026-06-05T01:07:42 EEST" name="tearDown" finished-at="2026-06-05T01:07:42 EEST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.test.RainbowProject.TestCreateBubble -->
       <class name="com.test.RainbowProject.TestInviteMember">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.test.RainbowProject.TestInviteMember@28261e8e]" started-at="2026-05-31T12:54:40 EEST" name="openBrowser" finished-at="2026-05-31T12:54:54 EEST" duration-ms="14122" status="PASS">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.test.RainbowProject.TestInviteMember@3e6fd0b9]" started-at="2026-06-05T01:07:42 EEST" name="openBrowser" finished-at="2026-06-05T01:08:04 EEST" duration-ms="21605" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="goToMainPage()[pri:0, instance:com.test.RainbowProject.TestInviteMember@28261e8e]" started-at="2026-05-31T12:54:54 EEST" name="goToMainPage" finished-at="2026-05-31T12:55:09 EEST" duration-ms="15200" status="PASS">
+        <test-method is-config="true" signature="goToMainPage()[pri:0, instance:com.test.RainbowProject.TestInviteMember@3e6fd0b9]" started-at="2026-06-05T01:08:04 EEST" name="goToMainPage" finished-at="2026-06-05T01:08:08 EEST" duration-ms="3677" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToMainPage -->
-        <test-method signature="InValidInviteMember()[pri:0, instance:com.test.RainbowProject.TestInviteMember@28261e8e]" started-at="2026-05-31T12:55:09 EEST" name="InValidInviteMember" finished-at="2026-05-31T12:55:22 EEST" duration-ms="12352" status="PASS">
+        <test-method signature="InValidInviteMember()[pri:0, instance:com.test.RainbowProject.TestInviteMember@3e6fd0b9]" started-at="2026-06-05T01:08:08 EEST" name="InValidInviteMember" finished-at="2026-06-05T01:08:08 EEST" duration-ms="2" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "com.aventstack.extentreports.ExtentReports.createTest(String)" because "com.test.RainbowProject.TestInviteMember.extent" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentReports.createTest(String)" because "com.test.RainbowProject.TestInviteMember.extent" is null
+at com.test.RainbowProject.TestInviteMember.InValidInviteMember(TestInviteMember.java:86)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InValidInviteMember -->
-        <test-method is-config="true" signature="goToMainPage()[pri:0, instance:com.test.RainbowProject.TestInviteMember@28261e8e]" started-at="2026-05-31T12:55:22 EEST" name="goToMainPage" finished-at="2026-05-31T12:55:37 EEST" duration-ms="15181" status="PASS">
+        <test-method is-config="true" signature="goToMainPage()[pri:0, instance:com.test.RainbowProject.TestInviteMember@3e6fd0b9]" started-at="2026-06-05T01:08:08 EEST" name="goToMainPage" finished-at="2026-06-05T01:08:08 EEST" duration-ms="627" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToMainPage -->
-        <test-method signature="ValidInviteMember()[pri:0, instance:com.test.RainbowProject.TestInviteMember@28261e8e]" started-at="2026-05-31T12:55:37 EEST" name="ValidInviteMember" finished-at="2026-05-31T12:55:49 EEST" duration-ms="12326" status="PASS">
+        <test-method signature="ValidInviteMember()[pri:0, instance:com.test.RainbowProject.TestInviteMember@3e6fd0b9]" started-at="2026-06-05T01:08:08 EEST" name="ValidInviteMember" finished-at="2026-06-05T01:08:08 EEST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "com.aventstack.extentreports.ExtentReports.createTest(String)" because "com.test.RainbowProject.TestInviteMember.extent" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentReports.createTest(String)" because "com.test.RainbowProject.TestInviteMember.extent" is null
+at com.test.RainbowProject.TestInviteMember.ValidInviteMember(TestInviteMember.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidInviteMember -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.RainbowProject.TestInviteMember@28261e8e]" started-at="2026-05-31T12:55:49 EEST" name="tearDown" finished-at="2026-05-31T12:55:50 EEST" duration-ms="203" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.RainbowProject.TestInviteMember@3e6fd0b9]" started-at="2026-06-05T01:08:08 EEST" name="tearDown" finished-at="2026-06-05T01:08:09 EEST" duration-ms="296" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.test.RainbowProject.TestInviteMember -->
-      <class name="com.test.RainbowProject.TestDeleteBubble">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.test.RainbowProject.TestDeleteBubble@8519cb4]" started-at="2026-05-31T12:56:33 EEST" name="openBrowser" finished-at="2026-05-31T12:56:47 EEST" duration-ms="14184" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="goToMainPage()[pri:0, instance:com.test.RainbowProject.TestDeleteBubble@8519cb4]" started-at="2026-05-31T12:56:47 EEST" name="goToMainPage" finished-at="2026-05-31T12:56:57 EEST" duration-ms="10137" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToMainPage -->
-        <test-method signature="InValidDeleteBubble()[pri:0, instance:com.test.RainbowProject.TestDeleteBubble@8519cb4]" started-at="2026-05-31T12:56:57 EEST" name="InValidDeleteBubble" finished-at="2026-05-31T12:57:09 EEST" duration-ms="11290" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- InValidDeleteBubble -->
-        <test-method is-config="true" signature="goToMainPage()[pri:0, instance:com.test.RainbowProject.TestDeleteBubble@8519cb4]" started-at="2026-05-31T12:57:09 EEST" name="goToMainPage" finished-at="2026-05-31T12:57:19 EEST" duration-ms="10064" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToMainPage -->
-        <test-method signature="ValidDeleteBubble()[pri:0, instance:com.test.RainbowProject.TestDeleteBubble@8519cb4]" started-at="2026-05-31T12:57:19 EEST" name="ValidDeleteBubble" finished-at="2026-05-31T12:57:30 EEST" duration-ms="11233" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidDeleteBubble -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.RainbowProject.TestDeleteBubble@8519cb4]" started-at="2026-05-31T12:57:30 EEST" name="tearDown" finished-at="2026-05-31T12:57:30 EEST" duration-ms="225" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.test.RainbowProject.TestDeleteBubble -->
       <class name="com.test.RainbowProject.TestRemoveMembers">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.test.RainbowProject.TestRemoveMembers@d737b89]" started-at="2026-05-31T12:55:50 EEST" name="openBrowser" finished-at="2026-05-31T12:56:03 EEST" duration-ms="13702" status="PASS">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.test.RainbowProject.TestRemoveMembers@7fcff1b9]" started-at="2026-06-05T01:08:09 EEST" name="openBrowser" finished-at="2026-06-05T01:08:14 EEST" duration-ms="5612" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[invalid session id: session deleted as the browser has closed the connection
+from disconnected: Unable to receive message from renderer
+  (Session info: chrome=149.0.7827.53)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '26.3.1', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f9cd36f5f3fb6c2d10f3175a6c1c5cbe, findElement {using=id, value=username}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.53, chrome: {chromedriverVersion: 149.0.7827.54 (42ce21f112d0..., userDataDir: /var/folders/sl/15v965y142g...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55627}, goog:processID: 19705, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55627/devtoo..., se:cdpVersion: 149.0.7827.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f9cd36f5f3fb6c2d10f3175a6c1c5cbe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: Unable to receive message from renderer
+  (Session info: chrome=149.0.7827.53)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '26.3.1', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f9cd36f5f3fb6c2d10f3175a6c1c5cbe, findElement {using=id, value=username}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.53, chrome: {chromedriverVersion: 149.0.7827.54 (42ce21f112d0..., userDataDir: /var/folders/sl/15v965y142g...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55627}, goog:processID: 19705, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55627/devtoo..., se:cdpVersion: 149.0.7827.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f9cd36f5f3fb6c2d10f3175a6c1c5cbe
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+at com.test.RainbowProject.BasePage.waitVisible(BasePage.java:75)
+at com.test.RainbowProject.BasePage.TextElement(BasePage.java:83)
+at com.test.RainbowProject.BasePage.loginSystem(BasePage.java:132)
+at com.test.RainbowProject.TestRemoveMembers.openBrowser(TestRemoveMembers.java:17)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="goToMainPage()[pri:0, instance:com.test.RainbowProject.TestRemoveMembers@d737b89]" started-at="2026-05-31T12:56:03 EEST" name="goToMainPage" finished-at="2026-05-31T12:56:18 EEST" duration-ms="15210" status="PASS">
+        <test-method is-config="true" signature="goToMainPage()[pri:0, instance:com.test.RainbowProject.TestRemoveMembers@7fcff1b9]" started-at="2026-06-05T01:08:14 EEST" name="goToMainPage" finished-at="2026-06-05T01:08:14 EEST" duration-ms="77" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[invalid session id
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '26.3.1', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f9cd36f5f3fb6c2d10f3175a6c1c5cbe, findElement {using=css selector, value=li.nav-item_bubble button.c-button--navigation}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.53, chrome: {chromedriverVersion: 149.0.7827.54 (42ce21f112d0..., userDataDir: /var/folders/sl/15v965y142g...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55627}, goog:processID: 19705, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55627/devtoo..., se:cdpVersion: 149.0.7827.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f9cd36f5f3fb6c2d10f3175a6c1c5cbe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '26.3.1', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f9cd36f5f3fb6c2d10f3175a6c1c5cbe, findElement {using=css selector, value=li.nav-item_bubble button.c-button--navigation}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.53, chrome: {chromedriverVersion: 149.0.7827.54 (42ce21f112d0..., userDataDir: /var/folders/sl/15v965y142g...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55627}, goog:processID: 19705, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55627/devtoo..., se:cdpVersion: 149.0.7827.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f9cd36f5f3fb6c2d10f3175a6c1c5cbe
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
+at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:627)
+at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:624)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+at com.test.RainbowProject.BasePage.waitClickable(BasePage.java:79)
+at com.test.RainbowProject.BasePage.clickButton(BasePage.java:89)
+at com.test.RainbowProject.BasePage.clickOnBubbleOption(BasePage.java:144)
+at com.test.RainbowProject.TestRemoveMembers.goToMainPage(TestRemoveMembers.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToMainPage -->
-        <test-method signature="ValidRemoveMember()[pri:0, instance:com.test.RainbowProject.TestRemoveMembers@d737b89]" started-at="2026-05-31T12:56:18 EEST" name="ValidRemoveMember" finished-at="2026-05-31T12:56:33 EEST" duration-ms="14372" status="PASS">
+        <test-method signature="ValidRemoveMember()[pri:0, instance:com.test.RainbowProject.TestRemoveMembers@7fcff1b9]" started-at="2026-06-05T01:08:14 EEST" name="ValidRemoveMember" finished-at="2026-06-05T01:08:14 EEST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[invalid session id: session deleted as the browser has closed the connection
+from disconnected: Unable to receive message from renderer
+  (Session info: chrome=149.0.7827.53)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '26.3.1', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f9cd36f5f3fb6c2d10f3175a6c1c5cbe, findElement {using=id, value=username}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.53, chrome: {chromedriverVersion: 149.0.7827.54 (42ce21f112d0..., userDataDir: /var/folders/sl/15v965y142g...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55627}, goog:processID: 19705, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55627/devtoo..., se:cdpVersion: 149.0.7827.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f9cd36f5f3fb6c2d10f3175a6c1c5cbe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: Unable to receive message from renderer
+  (Session info: chrome=149.0.7827.53)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '26.3.1', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f9cd36f5f3fb6c2d10f3175a6c1c5cbe, findElement {using=id, value=username}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.53, chrome: {chromedriverVersion: 149.0.7827.54 (42ce21f112d0..., userDataDir: /var/folders/sl/15v965y142g...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55627}, goog:processID: 19705, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55627/devtoo..., se:cdpVersion: 149.0.7827.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f9cd36f5f3fb6c2d10f3175a6c1c5cbe
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+at com.test.RainbowProject.BasePage.waitVisible(BasePage.java:75)
+at com.test.RainbowProject.BasePage.TextElement(BasePage.java:83)
+at com.test.RainbowProject.BasePage.loginSystem(BasePage.java:132)
+at com.test.RainbowProject.TestRemoveMembers.openBrowser(TestRemoveMembers.java:17)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidRemoveMember -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.RainbowProject.TestRemoveMembers@d737b89]" started-at="2026-05-31T12:56:33 EEST" name="tearDown" finished-at="2026-05-31T12:56:33 EEST" duration-ms="224" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.RainbowProject.TestRemoveMembers@7fcff1b9]" started-at="2026-06-05T01:08:14 EEST" name="tearDown" finished-at="2026-06-05T01:08:14 EEST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.test.RainbowProject.TestRemoveMembers -->
-      <class name="com.test.RainbowProject.TestLogin">
-        <test-method is-config="true" signature="setupReport()[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:49:24 EEST" name="setupReport" finished-at="2026-05-31T12:49:24 EEST" duration-ms="173" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupReport -->
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:49:24 EEST" name="openBrowser" finished-at="2026-05-31T12:49:27 EEST" duration-ms="2702" status="PASS">
+      <class name="com.test.RainbowProject.TestDeleteBubble">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.test.RainbowProject.TestDeleteBubble@697446d4]" started-at="2026-06-05T01:08:14 EEST" name="openBrowser" finished-at="2026-06-05T01:08:36 EEST" duration-ms="21602" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:49:27 EEST" name="goToLoginPage" finished-at="2026-05-31T12:49:31 EEST" duration-ms="4205" status="PASS">
+        <test-method is-config="true" signature="goToMainPage()[pri:0, instance:com.test.RainbowProject.TestDeleteBubble@697446d4]" started-at="2026-06-05T01:08:36 EEST" name="goToMainPage" finished-at="2026-06-05T01:08:36 EEST" duration-ms="480" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToMainPage -->
+        <test-method signature="InValidDeleteBubble()[pri:0, instance:com.test.RainbowProject.TestDeleteBubble@697446d4]" started-at="2026-06-05T01:08:36 EEST" name="InValidDeleteBubble" finished-at="2026-06-05T01:08:36 EEST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "com.aventstack.extentreports.ExtentReports.createTest(String)" because "com.test.RainbowProject.TestDeleteBubble.extent" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentReports.createTest(String)" because "com.test.RainbowProject.TestDeleteBubble.extent" is null
+at com.test.RainbowProject.TestDeleteBubble.InValidDeleteBubble(TestDeleteBubble.java:82)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InValidDeleteBubble -->
+        <test-method is-config="true" signature="goToMainPage()[pri:0, instance:com.test.RainbowProject.TestDeleteBubble@697446d4]" started-at="2026-06-05T01:08:36 EEST" name="goToMainPage" finished-at="2026-06-05T01:08:37 EEST" duration-ms="284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToMainPage -->
+        <test-method signature="ValidDeleteBubble()[pri:0, instance:com.test.RainbowProject.TestDeleteBubble@697446d4]" started-at="2026-06-05T01:08:37 EEST" name="ValidDeleteBubble" finished-at="2026-06-05T01:08:37 EEST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "com.aventstack.extentreports.ExtentReports.createTest(String)" because "com.test.RainbowProject.TestDeleteBubble.extent" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentReports.createTest(String)" because "com.test.RainbowProject.TestDeleteBubble.extent" is null
+at com.test.RainbowProject.TestDeleteBubble.ValidDeleteBubble(TestDeleteBubble.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidDeleteBubble -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.RainbowProject.TestDeleteBubble@697446d4]" started-at="2026-06-05T01:08:37 EEST" name="tearDown" finished-at="2026-06-05T01:08:43 EEST" duration-ms="5896" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.test.RainbowProject.TestDeleteBubble -->
+      <class name="com.test.RainbowProject.TestLogin">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:com.test.RainbowProject.TestLogin@4aeaadc1]" started-at="2026-06-05T01:06:00 EEST" name="setupReport" finished-at="2026-06-05T01:06:00 EEST" duration-ms="335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupReport -->
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.test.RainbowProject.TestLogin@4aeaadc1]" started-at="2026-06-05T01:06:01 EEST" name="openBrowser" finished-at="2026-06-05T01:06:04 EEST" duration-ms="3416" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="openLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@4aeaadc1]" started-at="2026-06-05T01:06:04 EEST" name="openLoginPage" finished-at="2026-06-05T01:06:10 EEST" duration-ms="5570" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openLoginPage -->
+        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@4aeaadc1]" started-at="2026-06-05T01:06:10 EEST" name="goToLoginPage" finished-at="2026-06-05T01:06:10 EEST" duration-ms="709" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToLoginPage -->
-        <test-method signature="DontHaveAnAccountSignUp()[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:49:31 EEST" name="DontHaveAnAccountSignUp" finished-at="2026-05-31T12:49:37 EEST" duration-ms="6173" status="PASS">
+        <test-method signature="DontHaveAnAccountSignUp()[pri:0, instance:com.test.RainbowProject.TestLogin@4aeaadc1]" started-at="2026-06-05T01:06:10 EEST" name="DontHaveAnAccountSignUp" finished-at="2026-06-05T01:06:11 EEST" duration-ms="778" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DontHaveAnAccountSignUp -->
-        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:49:37 EEST" name="goToLoginPage" finished-at="2026-05-31T12:49:37 EEST" duration-ms="233" status="PASS">
+        <test-method is-config="true" signature="openLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@4aeaadc1]" started-at="2026-06-05T01:06:11 EEST" name="openLoginPage" finished-at="2026-06-05T01:06:11 EEST" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openLoginPage -->
+        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@4aeaadc1]" started-at="2026-06-05T01:06:11 EEST" name="goToLoginPage" finished-at="2026-06-05T01:06:12 EEST" duration-ms="380" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToLoginPage -->
-        <test-method signature="ForgotPassword()[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:49:37 EEST" name="ForgotPassword" finished-at="2026-05-31T12:49:54 EEST" duration-ms="16549" status="PASS">
+        <test-method signature="ForgotPassword()[pri:0, instance:com.test.RainbowProject.TestLogin@4aeaadc1]" started-at="2026-06-05T01:06:12 EEST" name="ForgotPassword" finished-at="2026-06-05T01:06:15 EEST" duration-ms="3401" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ForgotPassword -->
-        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:49:54 EEST" name="goToLoginPage" finished-at="2026-05-31T12:49:54 EEST" duration-ms="229" status="PASS">
+        <test-method is-config="true" signature="openLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@4aeaadc1]" started-at="2026-06-05T01:06:15 EEST" name="openLoginPage" finished-at="2026-06-05T01:06:15 EEST" duration-ms="105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openLoginPage -->
+        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@4aeaadc1]" started-at="2026-06-05T01:06:15 EEST" name="goToLoginPage" finished-at="2026-06-05T01:06:15 EEST" duration-ms="303" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToLoginPage -->
-        <test-method signature="LearnMoreLinkAboutRainbow()[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:49:54 EEST" name="LearnMoreLinkAboutRainbow" finished-at="2026-05-31T12:50:02 EEST" duration-ms="8208" status="PASS">
+        <test-method signature="LearnMoreLinkAboutRainbow()[pri:0, instance:com.test.RainbowProject.TestLogin@4aeaadc1]" started-at="2026-06-05T01:06:15 EEST" name="LearnMoreLinkAboutRainbow" finished-at="2026-06-05T01:06:22 EEST" duration-ms="7040" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LearnMoreLinkAboutRainbow -->
-        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:50:02 EEST" name="goToLoginPage" finished-at="2026-05-31T12:50:03 EEST" duration-ms="245" status="PASS">
+        <test-method is-config="true" signature="openLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@4aeaadc1]" started-at="2026-06-05T01:06:22 EEST" name="openLoginPage" finished-at="2026-06-05T01:06:23 EEST" duration-ms="245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openLoginPage -->
+        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@4aeaadc1]" started-at="2026-06-05T01:06:23 EEST" name="goToLoginPage" finished-at="2026-06-05T01:06:23 EEST" duration-ms="349" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToLoginPage -->
-        <test-method signature="ThePrivacyPolicy()[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:50:03 EEST" name="ThePrivacyPolicy" finished-at="2026-05-31T12:50:11 EEST" duration-ms="8695" status="PASS">
+        <test-method signature="ThePrivacyPolicy()[pri:0, instance:com.test.RainbowProject.TestLogin@4aeaadc1]" started-at="2026-06-05T01:06:23 EEST" name="ThePrivacyPolicy" finished-at="2026-06-05T01:06:28 EEST" duration-ms="5487" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ThePrivacyPolicy -->
-        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:50:11 EEST" name="goToLoginPage" finished-at="2026-05-31T12:50:12 EEST" duration-ms="223" status="PASS">
+        <test-method is-config="true" signature="openLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@4aeaadc1]" started-at="2026-06-05T01:06:28 EEST" name="openLoginPage" finished-at="2026-06-05T01:06:29 EEST" duration-ms="248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openLoginPage -->
+        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@4aeaadc1]" started-at="2026-06-05T01:06:29 EEST" name="goToLoginPage" finished-at="2026-06-05T01:06:29 EEST" duration-ms="310" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToLoginPage -->
-        <test-method signature="TheTermsOfService()[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:50:12 EEST" name="TheTermsOfService" finished-at="2026-05-31T12:50:20 EEST" duration-ms="8260" status="PASS">
+        <test-method signature="TheTermsOfService()[pri:0, instance:com.test.RainbowProject.TestLogin@4aeaadc1]" started-at="2026-06-05T01:06:29 EEST" name="TheTermsOfService" finished-at="2026-06-05T01:06:32 EEST" duration-ms="2832" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TheTermsOfService -->
-        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:50:20 EEST" name="goToLoginPage" finished-at="2026-05-31T12:50:20 EEST" duration-ms="358" status="PASS">
+        <test-method is-config="true" signature="openLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@4aeaadc1]" started-at="2026-06-05T01:06:32 EEST" name="openLoginPage" finished-at="2026-06-05T01:06:32 EEST" duration-ms="104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openLoginPage -->
+        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@4aeaadc1]" started-at="2026-06-05T01:06:32 EEST" name="goToLoginPage" finished-at="2026-06-05T01:06:32 EEST" duration-ms="321" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToLoginPage -->
-        <test-method signature="validLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:50:20 EEST" name="validLogin" data-provider="create" finished-at="2026-05-31T12:50:36 EEST" duration-ms="15410" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mmahmoud@asaltech.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[selectEnvironment]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validLogin -->
-        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:50:36 EEST" name="goToLoginPage" finished-at="2026-05-31T12:50:36 EEST" duration-ms="581" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToLoginPage -->
-        <test-method signature="validLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:50:36 EEST" name="validLogin" data-provider="create" finished-at="2026-05-31T12:50:46 EEST" duration-ms="10157" status="PASS">
+        <test-method signature="validLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.RainbowProject.TestLogin@4aeaadc1]" started-at="2026-06-05T01:06:32 EEST" name="validLogin" data-provider="create" finished-at="2026-06-05T01:06:34 EEST" duration-ms="1280" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -217,11 +924,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLogin -->
-        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:50:46 EEST" name="goToLoginPage" finished-at="2026-05-31T12:50:47 EEST" duration-ms="305" status="PASS">
+        <test-method is-config="true" signature="openLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@4aeaadc1]" started-at="2026-06-05T01:06:34 EEST" name="openLoginPage" finished-at="2026-06-05T01:06:34 EEST" duration-ms="258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openLoginPage -->
+        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@4aeaadc1]" started-at="2026-06-05T01:06:34 EEST" name="goToLoginPage" finished-at="2026-06-05T01:06:34 EEST" duration-ms="304" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToLoginPage -->
-        <test-method signature="validLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:50:47 EEST" name="validLogin" data-provider="create" finished-at="2026-05-31T12:51:00 EEST" duration-ms="13309" status="PASS">
+        <test-method signature="validLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.RainbowProject.TestLogin@4aeaadc1]" started-at="2026-06-05T01:06:34 EEST" name="validLogin" data-provider="create" finished-at="2026-06-05T01:06:36 EEST" duration-ms="2183" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -242,11 +953,94 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLogin -->
-        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:51:00 EEST" name="goToLoginPage" finished-at="2026-05-31T12:51:00 EEST" duration-ms="318" status="PASS">
+        <test-method is-config="true" signature="openLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@4aeaadc1]" started-at="2026-06-05T01:06:36 EEST" name="openLoginPage" finished-at="2026-06-05T01:06:36 EEST" duration-ms="190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openLoginPage -->
+        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@4aeaadc1]" started-at="2026-06-05T01:06:36 EEST" name="goToLoginPage" finished-at="2026-06-05T01:06:37 EEST" duration-ms="306" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToLoginPage -->
-        <test-method signature="validLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:51:00 EEST" name="validLogin" data-provider="create" finished-at="2026-05-31T12:51:22 EEST" duration-ms="21626" status="PASS">
+        <test-method signature="validLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.RainbowProject.TestLogin@4aeaadc1]" started-at="2026-06-05T01:06:37 EEST" name="validLogin" data-provider="create" finished-at="2026-06-05T01:06:58 EEST" duration-ms="21326" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mmahmoud@asaltech.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[selectEnvironment]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.id: authentication__select (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '26.3.1', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.53, chrome: {chromedriverVersion: 149.0.7827.54 (42ce21f112d0..., userDataDir: /var/folders/sl/15v965y142g...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54838}, goog:processID: 19354, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54838/devtoo..., se:cdpVersion: 149.0.7827.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d0d19b44d955a8a8e27f33803ea655d7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: authentication__select (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '26.3.1', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.53, chrome: {chromedriverVersion: 149.0.7827.54 (42ce21f112d0..., userDataDir: /var/folders/sl/15v965y142g...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54838}, goog:processID: 19354, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54838/devtoo..., se:cdpVersion: 149.0.7827.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d0d19b44d955a8a8e27f33803ea655d7
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.test.RainbowProject.BasePage.waitClickable(BasePage.java:79)
+at com.test.RainbowProject.BasePage.clickButton(BasePage.java:89)
+at com.test.RainbowProject.TestLogin.validLogin(TestLogin.java:66)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLogin -->
+        <test-method is-config="true" signature="openLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@4aeaadc1]" started-at="2026-06-05T01:06:58 EEST" name="openLoginPage" finished-at="2026-06-05T01:06:59 EEST" duration-ms="436" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openLoginPage -->
+        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@4aeaadc1]" started-at="2026-06-05T01:06:59 EEST" name="goToLoginPage" finished-at="2026-06-05T01:06:59 EEST" duration-ms="699" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToLoginPage -->
+        <test-method signature="validLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.RainbowProject.TestLogin@4aeaadc1]" started-at="2026-06-05T01:06:59 EEST" name="validLogin" data-provider="create" finished-at="2026-06-05T01:07:05 EEST" duration-ms="5705" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -267,11 +1061,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLogin -->
-        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:51:22 EEST" name="goToLoginPage" finished-at="2026-05-31T12:51:22 EEST" duration-ms="402" status="PASS">
+        <test-method is-config="true" signature="openLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@4aeaadc1]" started-at="2026-06-05T01:07:05 EEST" name="openLoginPage" finished-at="2026-06-05T01:07:05 EEST" duration-ms="483" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openLoginPage -->
+        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:com.test.RainbowProject.TestLogin@4aeaadc1]" started-at="2026-06-05T01:07:05 EEST" name="goToLoginPage" finished-at="2026-06-05T01:07:06 EEST" duration-ms="312" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToLoginPage -->
-        <test-method signature="validLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:51:22 EEST" name="validLogin" data-provider="create" finished-at="2026-05-31T12:52:09 EEST" duration-ms="46344" status="PASS">
+        <test-method signature="validLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.test.RainbowProject.TestLogin@4aeaadc1]" started-at="2026-06-05T01:07:06 EEST" name="validLogin" data-provider="create" finished-at="2026-06-05T01:07:18 EEST" duration-ms="11737" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -292,11 +1090,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:52:09 EEST" name="tearDown" finished-at="2026-05-31T12:52:09 EEST" duration-ms="349" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.RainbowProject.TestLogin@4aeaadc1]" started-at="2026-06-05T01:07:18 EEST" name="tearDown" finished-at="2026-06-05T01:07:18 EEST" duration-ms="293" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:com.test.RainbowProject.TestLogin@196a42c3]" started-at="2026-05-31T12:57:30 EEST" name="tearDownReport" finished-at="2026-05-31T12:57:31 EEST" duration-ms="278" status="PASS">
+        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:com.test.RainbowProject.TestLogin@4aeaadc1]" started-at="2026-06-05T01:08:43 EEST" name="tearDownReport" finished-at="2026-06-05T01:08:43 EEST" duration-ms="303" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownReport -->

@@ -16,20 +16,6 @@
           <include name="goToMainPage"/>
         </methods>
       </class> <!-- com.test.RainbowProject.TestCreateBubble -->
-      <class name="com.test.RainbowProject.TestLogin">
-        <methods>
-          <include name="tearDown"/>
-          <include name="ForgotPassword"/>
-          <include name="openBrowser"/>
-          <include name="TheTermsOfService"/>
-          <include name="LearnMoreLinkAboutRainbow"/>
-          <include name="setupReport"/>
-          <include name="ThePrivacyPolicy"/>
-          <include name="tearDownReport"/>
-          <include name="validLogin"/>
-          <include name="goToLoginPage"/>
-        </methods>
-      </class> <!-- com.test.RainbowProject.TestLogin -->
       <class name="com.test.RainbowProject.TestInviteMember">
         <methods>
           <include name="ValidInviteMember"/>
@@ -41,6 +27,17 @@
           <include name="goToMainPage"/>
         </methods>
       </class> <!-- com.test.RainbowProject.TestInviteMember -->
+      <class name="com.test.RainbowProject.TestLogin">
+        <methods>
+          <include name="tearDown"/>
+          <include name="openBrowser"/>
+          <include name="setupReport"/>
+          <include name="tearDownReport"/>
+          <include name="validLogin" invocation-numbers="2"/>
+          <include name="openLoginPage"/>
+          <include name="goToLoginPage"/>
+        </methods>
+      </class> <!-- com.test.RainbowProject.TestLogin -->
       <class name="com.test.RainbowProject.TestRemoveMembers">
         <methods>
           <include name="ValidRemoveMember"/>

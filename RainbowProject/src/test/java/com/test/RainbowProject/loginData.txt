@@ -1,0 +1,6 @@
+username||password||expectedResult
+same||||disabledEmail
+sameer||123456||disabledPassword
+mmahmoud@asaltech.com||||selectEnvironment
+Admin||12345678||incorrect
+sameerfaris2005@gmail.com||Sameerqindah_123||success

@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Rainbow_Test_Suite" class="navigator-link">
-              <span class="suite-name border-passed">Rainbow Test Suite</span>
+              <span class="suite-name border-failed">Rainbow Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,75 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">19 methods,   19 passed</span>
+                    <span class="method-stats">19 methods, 5 failed,  5 skipped,  9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Rainbow_Test_Suite" class="hide-methods failed suite-Rainbow_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-Rainbow_Test_Suite -->
+                      <a href="#" panel-name="suite-Rainbow_Test_Suite" class="show-methods failed suite-Rainbow_Test_Suite"> (show)</a> <!-- show-methods failed suite-Rainbow_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Rainbow_Test_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Rainbow_Test_Suite" title="com.test.RainbowProject.TestDeleteBubble" class="method navigator-link" hash-for-method="InValidDeleteBubble">InValidDeleteBubble</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Rainbow_Test_Suite" title="com.test.RainbowProject.TestInviteMember" class="method navigator-link" hash-for-method="InValidInviteMember">InValidInviteMember</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Rainbow_Test_Suite" title="com.test.RainbowProject.TestDeleteBubble" class="method navigator-link" hash-for-method="ValidDeleteBubble">ValidDeleteBubble</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Rainbow_Test_Suite" title="com.test.RainbowProject.TestInviteMember" class="method navigator-link" hash-for-method="ValidInviteMember">ValidInviteMember</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Rainbow_Test_Suite" title="com.test.RainbowProject.TestLogin" class="method navigator-link" hash-for-method="validLogin(mmahmoud@asaltech.com, , selectEnvironment)">validLogin(mmahmoud@asaltech.com, , selectEnvironment)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Rainbow_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Rainbow_Test_Suite" class="hide-methods skipped suite-Rainbow_Test_Suite"> (hide)</a> <!-- hide-methods skipped suite-Rainbow_Test_Suite -->
+                      <a href="#" panel-name="suite-Rainbow_Test_Suite" class="show-methods skipped suite-Rainbow_Test_Suite"> (show)</a> <!-- show-methods skipped suite-Rainbow_Test_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Rainbow_Test_Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Rainbow_Test_Suite" title="com.test.RainbowProject.TestCreateBubble" class="method navigator-link" hash-for-method="CancelCreateBubble">CancelCreateBubble</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Rainbow_Test_Suite" title="com.test.RainbowProject.TestCreateBubble" class="method navigator-link" hash-for-method="InValidCreateBubble">InValidCreateBubble</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Rainbow_Test_Suite" title="com.test.RainbowProject.TestCreateBubble" class="method navigator-link" hash-for-method="ValidCreateBubble">ValidCreateBubble</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Rainbow_Test_Suite" title="com.test.RainbowProject.TestRemoveMembers" class="method navigator-link" hash-for-method="ValidRemoveMember">ValidRemoveMember</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Rainbow_Test_Suite" title="com.test.RainbowProject.TestCreateBubble" class="method navigator-link" hash-for-method="displayErrorBubbleName">displayErrorBubbleName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Rainbow_Test_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,32 +171,12 @@
                     <div class="method-list-content passed suite-Rainbow_Test_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Rainbow_Test_Suite" title="com.test.RainbowProject.TestCreateBubble" class="method navigator-link" hash-for-method="CancelCreateBubble">CancelCreateBubble</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Rainbow_Test_Suite" title="com.test.RainbowProject.TestLogin" class="method navigator-link" hash-for-method="DontHaveAnAccountSignUp">DontHaveAnAccountSignUp</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Rainbow_Test_Suite" title="com.test.RainbowProject.TestLogin" class="method navigator-link" hash-for-method="ForgotPassword">ForgotPassword</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Rainbow_Test_Suite" title="com.test.RainbowProject.TestCreateBubble" class="method navigator-link" hash-for-method="InValidCreateBubble">InValidCreateBubble</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Rainbow_Test_Suite" title="com.test.RainbowProject.TestDeleteBubble" class="method navigator-link" hash-for-method="InValidDeleteBubble">InValidDeleteBubble</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Rainbow_Test_Suite" title="com.test.RainbowProject.TestInviteMember" class="method navigator-link" hash-for-method="InValidInviteMember">InValidInviteMember</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -148,32 +196,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Rainbow_Test_Suite" title="com.test.RainbowProject.TestCreateBubble" class="method navigator-link" hash-for-method="ValidCreateBubble">ValidCreateBubble</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Rainbow_Test_Suite" title="com.test.RainbowProject.TestDeleteBubble" class="method navigator-link" hash-for-method="ValidDeleteBubble">ValidDeleteBubble</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Rainbow_Test_Suite" title="com.test.RainbowProject.TestInviteMember" class="method navigator-link" hash-for-method="ValidInviteMember">ValidInviteMember</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Rainbow_Test_Suite" title="com.test.RainbowProject.TestRemoveMembers" class="method navigator-link" hash-for-method="ValidRemoveMember">ValidRemoveMember</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Rainbow_Test_Suite" title="com.test.RainbowProject.TestCreateBubble" class="method navigator-link" hash-for-method="displayErrorBubbleName">displayErrorBubbleName</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Rainbow_Test_Suite" title="com.test.RainbowProject.TestLogin" class="method navigator-link" hash-for-method="validLogin(sameerfaris2005@gmail.com, Sameerqindah_123, success)">validLogin(sameerfaris2005@gmail.com, Sameerqindah_123, success)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Rainbow_Test_Suite" title="com.test.RainbowProject.TestLogin" class="method navigator-link" hash-for-method="validLogin(sameer, 123456, disabledPassword)">validLogin(sameer, 123456, disabledPassword)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -183,12 +206,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Rainbow_Test_Suite" title="com.test.RainbowProject.TestLogin" class="method navigator-link" hash-for-method="validLogin(sameer, 123456, disabledPassword)">validLogin(sameer, 123456, disabledPassword)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Rainbow_Test_Suite" title="com.test.RainbowProject.TestLogin" class="method navigator-link" hash-for-method="validLogin(mmahmoud@asaltech.com, , selectEnvironment)">validLogin(mmahmoud@asaltech.com, , selectEnvironment)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Rainbow_Test_Suite" title="com.test.RainbowProject.TestLogin" class="method navigator-link" hash-for-method="validLogin(sameerfaris2005@gmail.com, Sameerqindah_123, success)">validLogin(sameerfaris2005@gmail.com, Sameerqindah_123, success)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -208,45 +226,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Rainbow_Test_Suite" class="panel Rainbow_Test_Suite">
-          <div class="suite-Rainbow_Test_Suite-class-passed">
+          <div class="suite-Rainbow_Test_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.test.RainbowProject.TestCreateBubble</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="CancelCreateBubble">
-                  </a> <!-- CancelCreateBubble -->
-                  <span class="method-name">CancelCreateBubble</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="InValidCreateBubble">
-                  </a> <!-- InValidCreateBubble -->
-                  <span class="method-name">InValidCreateBubble</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="ValidCreateBubble">
-                  </a> <!-- ValidCreateBubble -->
-                  <span class="method-name">ValidCreateBubble</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="displayErrorBubbleName">
-                  </a> <!-- displayErrorBubbleName -->
-                  <span class="method-name">displayErrorBubbleName</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Rainbow_Test_Suite-class-passed -->
-          <div class="suite-Rainbow_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.test.RainbowProject.TestInviteMember</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -255,6 +237,11 @@
                   <a name="InValidInviteMember">
                   </a> <!-- InValidInviteMember -->
                   <span class="method-name">InValidInviteMember</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentReports.createTest(String)&quot; because &quot;com.test.RainbowProject.TestInviteMember.extent&quot; is null
+	at com.test.RainbowProject.TestInviteMember.InValidInviteMember(TestInviteMember.java:86)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -262,10 +249,254 @@
                   <a name="ValidInviteMember">
                   </a> <!-- ValidInviteMember -->
                   <span class="method-name">ValidInviteMember</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentReports.createTest(String)&quot; because &quot;com.test.RainbowProject.TestInviteMember.extent&quot; is null
+	at com.test.RainbowProject.TestInviteMember.ValidInviteMember(TestInviteMember.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Rainbow_Test_Suite-class-passed -->
+          </div> <!-- suite-Rainbow_Test_Suite-class-failed -->
+          <div class="suite-Rainbow_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.test.RainbowProject.TestLogin</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validLogin(mmahmoud@asaltech.com, , selectEnvironment)">
+                  </a> <!-- validLogin(mmahmoud@asaltech.com, , selectEnvironment) -->
+                  <span class="method-name">validLogin</span>
+                  <span class="parameters">(mmahmoud@asaltech.com,,selectEnvironment)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: authentication__select (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;26.3.1&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.53, chrome: {chromedriverVersion: 149.0.7827.54 (42ce21f112d0..., userDataDir: /var/folders/sl/15v965y142g...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54838}, goog:processID: 19354, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54838/devtoo..., se:cdpVersion: 149.0.7827.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d0d19b44d955a8a8e27f33803ea655d7
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.test.RainbowProject.BasePage.waitClickable(BasePage.java:79)
+	at com.test.RainbowProject.BasePage.clickButton(BasePage.java:89)
+	at com.test.RainbowProject.TestLogin.validLogin(TestLogin.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Rainbow_Test_Suite-class-failed -->
+          <div class="suite-Rainbow_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.test.RainbowProject.TestDeleteBubble</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="InValidDeleteBubble">
+                  </a> <!-- InValidDeleteBubble -->
+                  <span class="method-name">InValidDeleteBubble</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentReports.createTest(String)&quot; because &quot;com.test.RainbowProject.TestDeleteBubble.extent&quot; is null
+	at com.test.RainbowProject.TestDeleteBubble.InValidDeleteBubble(TestDeleteBubble.java:82)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidDeleteBubble">
+                  </a> <!-- ValidDeleteBubble -->
+                  <span class="method-name">ValidDeleteBubble</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentReports.createTest(String)&quot; because &quot;com.test.RainbowProject.TestDeleteBubble.extent&quot; is null
+	at com.test.RainbowProject.TestDeleteBubble.ValidDeleteBubble(TestDeleteBubble.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Rainbow_Test_Suite-class-failed -->
+          <div class="suite-Rainbow_Test_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.test.RainbowProject.TestCreateBubble</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CancelCreateBubble">
+                  </a> <!-- CancelCreateBubble -->
+                  <span class="method-name">CancelCreateBubble</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;rb-button id=&quot;rooms-header-create-bubble-button&quot; customclass=&quot;c-button--responsive&quot; responsiveicon=&quot;add&quot; type=&quot;primary&quot; rbtooltip=&quot;createWorkgroup&quot; tooltipposition=&quot;bottom&quot;&gt;...&lt;/rb-button&gt; is not clickable at point (1696, 23). Other element would receive the click: &lt;div _ngcontent-ng-c4290628622=&quot;&quot; class=&quot;ngx-spinner-overlay fade-out&quot; style=&quot;background-color: rgba(0, 0, 0, 0.59); z-index: 99999; position: absolute;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=149.0.7827.53)
+Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;26.3.1&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d3e8811bfd4aa79133f8925d4203efdb, clickElement {id=f.ADD8A08C9E96C67BFF87A54ACA92F9B1.d.48BD3C2072EC75E7E9812AFD7F170030.e.147}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.53, chrome: {chromedriverVersion: 149.0.7827.54 (42ce21f112d0..., userDataDir: /var/folders/sl/15v965y142g...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55219}, goog:processID: 19525, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55219/devtoo..., se:cdpVersion: 149.0.7827.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (d3e8811bfd4aa79133f8925d4203efdb)] -&gt; id: rooms-header-create-bubble-button]
+Session ID: d3e8811bfd4aa79133f8925d4203efdb
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.test.RainbowProject.BasePage.clickButton(BasePage.java:89)
+	at com.test.RainbowProject.CreateBubblePage.clickOnCreateBubbleButton(CreateBubblePage.java:8)
+	at com.test.RainbowProject.TestCreateBubble.goToMainPage(TestCreateBubble.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="InValidCreateBubble">
+                  </a> <!-- InValidCreateBubble -->
+                  <span class="method-name">InValidCreateBubble</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;rb-button id=&quot;rooms-header-create-bubble-button&quot; customclass=&quot;c-button--responsive&quot; responsiveicon=&quot;add&quot; type=&quot;primary&quot; rbtooltip=&quot;createWorkgroup&quot; tooltipposition=&quot;bottom&quot;&gt;...&lt;/rb-button&gt; is not clickable at point (1696, 23). Other element would receive the click: &lt;div _ngcontent-ng-c4290628622=&quot;&quot; class=&quot;ngx-spinner-overlay fade-out&quot; style=&quot;background-color: rgba(0, 0, 0, 0.59); z-index: 99999; position: absolute;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=149.0.7827.53)
+Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;26.3.1&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d3e8811bfd4aa79133f8925d4203efdb, clickElement {id=f.ADD8A08C9E96C67BFF87A54ACA92F9B1.d.48BD3C2072EC75E7E9812AFD7F170030.e.147}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.53, chrome: {chromedriverVersion: 149.0.7827.54 (42ce21f112d0..., userDataDir: /var/folders/sl/15v965y142g...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55219}, goog:processID: 19525, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55219/devtoo..., se:cdpVersion: 149.0.7827.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (d3e8811bfd4aa79133f8925d4203efdb)] -&gt; id: rooms-header-create-bubble-button]
+Session ID: d3e8811bfd4aa79133f8925d4203efdb
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.test.RainbowProject.BasePage.clickButton(BasePage.java:89)
+	at com.test.RainbowProject.CreateBubblePage.clickOnCreateBubbleButton(CreateBubblePage.java:8)
+	at com.test.RainbowProject.TestCreateBubble.goToMainPage(TestCreateBubble.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidCreateBubble">
+                  </a> <!-- ValidCreateBubble -->
+                  <span class="method-name">ValidCreateBubble</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;rb-button id=&quot;rooms-header-create-bubble-button&quot; customclass=&quot;c-button--responsive&quot; responsiveicon=&quot;add&quot; type=&quot;primary&quot; rbtooltip=&quot;createWorkgroup&quot; tooltipposition=&quot;bottom&quot;&gt;...&lt;/rb-button&gt; is not clickable at point (1696, 23). Other element would receive the click: &lt;div _ngcontent-ng-c4290628622=&quot;&quot; class=&quot;ngx-spinner-overlay fade-out&quot; style=&quot;background-color: rgba(0, 0, 0, 0.59); z-index: 99999; position: absolute;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=149.0.7827.53)
+Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;26.3.1&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d3e8811bfd4aa79133f8925d4203efdb, clickElement {id=f.ADD8A08C9E96C67BFF87A54ACA92F9B1.d.48BD3C2072EC75E7E9812AFD7F170030.e.147}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.53, chrome: {chromedriverVersion: 149.0.7827.54 (42ce21f112d0..., userDataDir: /var/folders/sl/15v965y142g...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55219}, goog:processID: 19525, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55219/devtoo..., se:cdpVersion: 149.0.7827.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (d3e8811bfd4aa79133f8925d4203efdb)] -&gt; id: rooms-header-create-bubble-button]
+Session ID: d3e8811bfd4aa79133f8925d4203efdb
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.test.RainbowProject.BasePage.clickButton(BasePage.java:89)
+	at com.test.RainbowProject.CreateBubblePage.clickOnCreateBubbleButton(CreateBubblePage.java:8)
+	at com.test.RainbowProject.TestCreateBubble.goToMainPage(TestCreateBubble.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="displayErrorBubbleName">
+                  </a> <!-- displayErrorBubbleName -->
+                  <span class="method-name">displayErrorBubbleName</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;rb-button id=&quot;rooms-header-create-bubble-button&quot; customclass=&quot;c-button--responsive&quot; responsiveicon=&quot;add&quot; type=&quot;primary&quot; rbtooltip=&quot;createWorkgroup&quot; tooltipposition=&quot;bottom&quot;&gt;...&lt;/rb-button&gt; is not clickable at point (1696, 23). Other element would receive the click: &lt;div _ngcontent-ng-c4290628622=&quot;&quot; class=&quot;ngx-spinner-overlay fade-out&quot; style=&quot;background-color: rgba(0, 0, 0, 0.59); z-index: 99999; position: absolute;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=149.0.7827.53)
+Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;26.3.1&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d3e8811bfd4aa79133f8925d4203efdb, clickElement {id=f.ADD8A08C9E96C67BFF87A54ACA92F9B1.d.48BD3C2072EC75E7E9812AFD7F170030.e.147}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.53, chrome: {chromedriverVersion: 149.0.7827.54 (42ce21f112d0..., userDataDir: /var/folders/sl/15v965y142g...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55219}, goog:processID: 19525, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55219/devtoo..., se:cdpVersion: 149.0.7827.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (d3e8811bfd4aa79133f8925d4203efdb)] -&gt; id: rooms-header-create-bubble-button]
+Session ID: d3e8811bfd4aa79133f8925d4203efdb
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.test.RainbowProject.BasePage.clickButton(BasePage.java:89)
+	at com.test.RainbowProject.CreateBubblePage.clickOnCreateBubbleButton(CreateBubblePage.java:8)
+	at com.test.RainbowProject.TestCreateBubble.goToMainPage(TestCreateBubble.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Rainbow_Test_Suite-class-skipped -->
+          <div class="suite-Rainbow_Test_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.test.RainbowProject.TestRemoveMembers</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidRemoveMember">
+                  </a> <!-- ValidRemoveMember -->
+                  <span class="method-name">ValidRemoveMember</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: Unable to receive message from renderer
+  (Session info: chrome=149.0.7827.53)
+Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;26.3.1&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f9cd36f5f3fb6c2d10f3175a6c1c5cbe, findElement {using=id, value=username}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.53, chrome: {chromedriverVersion: 149.0.7827.54 (42ce21f112d0..., userDataDir: /var/folders/sl/15v965y142g...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55627}, goog:processID: 19705, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55627/devtoo..., se:cdpVersion: 149.0.7827.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f9cd36f5f3fb6c2d10f3175a6c1c5cbe
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at com.test.RainbowProject.BasePage.waitVisible(BasePage.java:75)
+	at com.test.RainbowProject.BasePage.TextElement(BasePage.java:83)
+	at com.test.RainbowProject.BasePage.loginSystem(BasePage.java:132)
+	at com.test.RainbowProject.TestRemoveMembers.openBrowser(TestRemoveMembers.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Rainbow_Test_Suite-class-skipped -->
           <div class="suite-Rainbow_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -309,10 +540,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="validLogin(sameerfaris2005@gmail.com, Sameerqindah_123, success)">
-                  </a> <!-- validLogin(sameerfaris2005@gmail.com, Sameerqindah_123, success) -->
+                  <a name="validLogin(sameer, 123456, disabledPassword)">
+                  </a> <!-- validLogin(sameer, 123456, disabledPassword) -->
                   <span class="method-name">validLogin</span>
-                  <span class="parameters">(sameerfaris2005@gmail.com,Sameerqindah_123,success)</span>
+                  <span class="parameters">(sameer,123456,disabledPassword)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -325,18 +556,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="validLogin(sameer, 123456, disabledPassword)">
-                  </a> <!-- validLogin(sameer, 123456, disabledPassword) -->
+                  <a name="validLogin(sameerfaris2005@gmail.com, Sameerqindah_123, success)">
+                  </a> <!-- validLogin(sameerfaris2005@gmail.com, Sameerqindah_123, success) -->
                   <span class="method-name">validLogin</span>
-                  <span class="parameters">(sameer,123456,disabledPassword)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validLogin(mmahmoud@asaltech.com, , selectEnvironment)">
-                  </a> <!-- validLogin(mmahmoud@asaltech.com, , selectEnvironment) -->
-                  <span class="method-name">validLogin</span>
-                  <span class="parameters">(mmahmoud@asaltech.com,,selectEnvironment)</span>
+                  <span class="parameters">(sameerfaris2005@gmail.com,Sameerqindah_123,success)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -345,43 +568,6 @@
                   </a> <!-- validLogin(same, , disabledEmail) -->
                   <span class="method-name">validLogin</span>
                   <span class="parameters">(same,,disabledEmail)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Rainbow_Test_Suite-class-passed -->
-          <div class="suite-Rainbow_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.test.RainbowProject.TestRemoveMembers</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="ValidRemoveMember">
-                  </a> <!-- ValidRemoveMember -->
-                  <span class="method-name">ValidRemoveMember</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Rainbow_Test_Suite-class-passed -->
-          <div class="suite-Rainbow_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.test.RainbowProject.TestDeleteBubble</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="InValidDeleteBubble">
-                  </a> <!-- InValidDeleteBubble -->
-                  <span class="method-name">InValidDeleteBubble</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="ValidDeleteBubble">
-                  </a> <!-- ValidDeleteBubble -->
-                  <span class="method-name">ValidDeleteBubble</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -446,84 +632,84 @@ data.addRows(19);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'validLogin')
 data.setCell(0, 2, 'com.test.RainbowProject.TestLogin')
-data.setCell(0, 3, 46344);
+data.setCell(0, 3, 21326);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'ValidCreateBubble')
-data.setCell(1, 2, 'com.test.RainbowProject.TestCreateBubble')
-data.setCell(1, 3, 26949);
+data.setCell(1, 1, 'validLogin')
+data.setCell(1, 2, 'com.test.RainbowProject.TestLogin')
+data.setCell(1, 3, 11737);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'InValidCreateBubble')
-data.setCell(2, 2, 'com.test.RainbowProject.TestCreateBubble')
-data.setCell(2, 3, 21993);
+data.setCell(2, 1, 'LearnMoreLinkAboutRainbow')
+data.setCell(2, 2, 'com.test.RainbowProject.TestLogin')
+data.setCell(2, 3, 7040);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'validLogin')
 data.setCell(3, 2, 'com.test.RainbowProject.TestLogin')
-data.setCell(3, 3, 21626);
+data.setCell(3, 3, 5705);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'ForgotPassword')
+data.setCell(4, 1, 'ThePrivacyPolicy')
 data.setCell(4, 2, 'com.test.RainbowProject.TestLogin')
-data.setCell(4, 3, 16549);
+data.setCell(4, 3, 5487);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'validLogin')
+data.setCell(5, 1, 'ForgotPassword')
 data.setCell(5, 2, 'com.test.RainbowProject.TestLogin')
-data.setCell(5, 3, 15410);
+data.setCell(5, 3, 3401);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'ValidRemoveMember')
-data.setCell(6, 2, 'com.test.RainbowProject.TestRemoveMembers')
-data.setCell(6, 3, 14372);
+data.setCell(6, 1, 'TheTermsOfService')
+data.setCell(6, 2, 'com.test.RainbowProject.TestLogin')
+data.setCell(6, 3, 2832);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'CancelCreateBubble')
-data.setCell(7, 2, 'com.test.RainbowProject.TestCreateBubble')
-data.setCell(7, 3, 14369);
+data.setCell(7, 1, 'validLogin')
+data.setCell(7, 2, 'com.test.RainbowProject.TestLogin')
+data.setCell(7, 3, 2183);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'validLogin')
 data.setCell(8, 2, 'com.test.RainbowProject.TestLogin')
-data.setCell(8, 3, 13309);
+data.setCell(8, 3, 1280);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'InValidInviteMember')
-data.setCell(9, 2, 'com.test.RainbowProject.TestInviteMember')
-data.setCell(9, 3, 12352);
+data.setCell(9, 1, 'DontHaveAnAccountSignUp')
+data.setCell(9, 2, 'com.test.RainbowProject.TestLogin')
+data.setCell(9, 3, 778);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'ValidInviteMember')
+data.setCell(10, 1, 'InValidInviteMember')
 data.setCell(10, 2, 'com.test.RainbowProject.TestInviteMember')
-data.setCell(10, 3, 12326);
+data.setCell(10, 3, 2);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'InValidDeleteBubble')
+data.setCell(11, 1, 'ValidDeleteBubble')
 data.setCell(11, 2, 'com.test.RainbowProject.TestDeleteBubble')
-data.setCell(11, 3, 11290);
+data.setCell(11, 3, 1);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'ValidDeleteBubble')
-data.setCell(12, 2, 'com.test.RainbowProject.TestDeleteBubble')
-data.setCell(12, 3, 11233);
+data.setCell(12, 1, 'ValidInviteMember')
+data.setCell(12, 2, 'com.test.RainbowProject.TestInviteMember')
+data.setCell(12, 3, 1);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'validLogin')
-data.setCell(13, 2, 'com.test.RainbowProject.TestLogin')
-data.setCell(13, 3, 10157);
+data.setCell(13, 1, 'InValidDeleteBubble')
+data.setCell(13, 2, 'com.test.RainbowProject.TestDeleteBubble')
+data.setCell(13, 3, 1);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'ThePrivacyPolicy')
-data.setCell(14, 2, 'com.test.RainbowProject.TestLogin')
-data.setCell(14, 3, 8695);
+data.setCell(14, 1, 'displayErrorBubbleName')
+data.setCell(14, 2, 'com.test.RainbowProject.TestCreateBubble')
+data.setCell(14, 3, 0);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'TheTermsOfService')
-data.setCell(15, 2, 'com.test.RainbowProject.TestLogin')
-data.setCell(15, 3, 8260);
+data.setCell(15, 1, 'ValidRemoveMember')
+data.setCell(15, 2, 'com.test.RainbowProject.TestRemoveMembers')
+data.setCell(15, 3, 0);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'LearnMoreLinkAboutRainbow')
-data.setCell(16, 2, 'com.test.RainbowProject.TestLogin')
-data.setCell(16, 3, 8208);
+data.setCell(16, 1, 'CancelCreateBubble')
+data.setCell(16, 2, 'com.test.RainbowProject.TestCreateBubble')
+data.setCell(16, 3, 0);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'DontHaveAnAccountSignUp')
-data.setCell(17, 2, 'com.test.RainbowProject.TestLogin')
-data.setCell(17, 3, 6173);
+data.setCell(17, 1, 'ValidCreateBubble')
+data.setCell(17, 2, 'com.test.RainbowProject.TestCreateBubble')
+data.setCell(17, 3, 0);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'displayErrorBubbleName')
+data.setCell(18, 1, 'InValidCreateBubble')
 data.setCell(18, 2, 'com.test.RainbowProject.TestCreateBubble')
-data.setCell(18, 3, 5182);
+data.setCell(18, 3, 0);
 window.suiteTableData['Rainbow_Test_Suite']= { tableData: data, tableDiv: 'times-div-Rainbow_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Rainbow_Test_Suite">
               </div> <!-- times-div-Rainbow_Test_Suite -->
             </div> <!-- times-div -->
@@ -544,9 +730,9 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.test.RainbowProject.TestCreateBubble</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">tearDownReport</span>
-                <br/>
                 <span class="ignored-method-name">setupReport</span>
+                <br/>
+                <span class="ignored-method-name">tearDownReport</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -592,214 +778,242 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">openBrowser</span>
-                <span class="method-start">188 ms</span>
+                <span class="method-start">362 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
+                <span class="method-name">openLoginPage</span>
+                <span class="method-start">3794 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
                 <span class="method-name">goToLoginPage</span>
-                <span class="method-start">2899 ms</span>
+                <span class="method-start">9366 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">DontHaveAnAccountSignUp</span>
-                <span class="method-start">7105 ms</span>
+                <span class="method-start">10075 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
+                <span class="method-name">openLoginPage</span>
+                <span class="method-start">10857 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
                 <span class="method-name">goToLoginPage</span>
-                <span class="method-start">13281 ms</span>
+                <span class="method-start">10966 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">ForgotPassword</span>
-                <span class="method-start">13514 ms</span>
+                <span class="method-start">11347 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
+                <span class="method-name">openLoginPage</span>
+                <span class="method-start">14749 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
                 <span class="method-name">goToLoginPage</span>
-                <span class="method-start">30065 ms</span>
+                <span class="method-start">14855 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">LearnMoreLinkAboutRainbow</span>
-                <span class="method-start">30294 ms</span>
+                <span class="method-start">15158 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
+                <span class="method-name">openLoginPage</span>
+                <span class="method-start">22200 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
                 <span class="method-name">goToLoginPage</span>
-                <span class="method-start">38504 ms</span>
+                <span class="method-start">22446 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">ThePrivacyPolicy</span>
-                <span class="method-start">38749 ms</span>
+                <span class="method-start">22795 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
+                <span class="method-name">openLoginPage</span>
+                <span class="method-start">28284 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
                 <span class="method-name">goToLoginPage</span>
-                <span class="method-start">47445 ms</span>
+                <span class="method-start">28533 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TheTermsOfService</span>
-                <span class="method-start">47668 ms</span>
+                <span class="method-start">28843 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
-                <span class="method-name">goToLoginPage</span>
-                <span class="method-start">55934 ms</span>
+                <span class="method-name">openLoginPage</span>
+                <span class="method-start">31681 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">validLogin(mmahmoud@asaltech.com, , selectEnvironment)</span>
-                <span class="method-start">56292 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">goToLoginPage</span>
-                <span class="method-start">71703 ms</span>
+                <span class="method-start">31785 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validLogin(same, , disabledEmail)</span>
-                <span class="method-start">72284 ms</span>
+                <span class="method-start">32106 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
+                <span class="method-name">openLoginPage</span>
+                <span class="method-start">33388 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
                 <span class="method-name">goToLoginPage</span>
-                <span class="method-start">82443 ms</span>
+                <span class="method-start">33646 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validLogin(sameer, 123456, disabledPassword)</span>
-                <span class="method-start">82748 ms</span>
+                <span class="method-start">33950 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
+                <span class="method-name">openLoginPage</span>
+                <span class="method-start">36135 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
                 <span class="method-name">goToLoginPage</span>
-                <span class="method-start">96058 ms</span>
+                <span class="method-start">36325 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validLogin(mmahmoud@asaltech.com, , selectEnvironment)</span>
+                <span class="method-start">36631 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">openLoginPage</span>
+                <span class="method-start">57963 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">goToLoginPage</span>
+                <span class="method-start">58400 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validLogin(Admin, 12345678, incorrect)</span>
-                <span class="method-start">96377 ms</span>
+                <span class="method-start">59100 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
+                <span class="method-name">openLoginPage</span>
+                <span class="method-start">64807 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
                 <span class="method-name">goToLoginPage</span>
-                <span class="method-start">118004 ms</span>
+                <span class="method-start">65291 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validLogin(sameerfaris2005@gmail.com, Sameerqindah_123, success)</span>
-                <span class="method-start">118406 ms</span>
+                <span class="method-start">65603 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">164751 ms</span>
+                <span class="method-start">77346 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.test.RainbowProject.TestCreateBubble</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">openBrowser</span>
-                <span class="method-start">165102 ms</span>
+                <span class="method-start">77641 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">goToMainPage</span>
-                <span class="method-start">178959 ms</span>
+                <span class="method-start">100364 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">CancelCreateBubble</span>
-                <span class="method-start">196166 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">goToMainPage</span>
-                <span class="method-start">210536 ms</span>
+                <span class="method-start">101922 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">InValidCreateBubble</span>
-                <span class="method-start">227651 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">goToMainPage</span>
-                <span class="method-start">249645 ms</span>
+                <span class="method-start">102077 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">ValidCreateBubble</span>
-                <span class="method-start">266755 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">goToMainPage</span>
-                <span class="method-start">293705 ms</span>
+                <span class="method-start">102199 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">displayErrorBubbleName</span>
-                <span class="method-start">310901 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">316083 ms</span>
-              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.test.RainbowProject.TestInviteMember</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">openBrowser</span>
-                <span class="method-start">316294 ms</span>
+                <span class="method-start">102317 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">goToMainPage</span>
-                <span class="method-start">330416 ms</span>
+                <span class="method-start">123923 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">InValidInviteMember</span>
-                <span class="method-start">345616 ms</span>
+                <span class="method-start">127600 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">goToMainPage</span>
-                <span class="method-start">357970 ms</span>
+                <span class="method-start">127605 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">ValidInviteMember</span>
-                <span class="method-start">373151 ms</span>
+                <span class="method-start">128232 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">385478 ms</span>
+                <span class="method-start">128234 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.test.RainbowProject.TestRemoveMembers</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">openBrowser</span>
-                <span class="method-start">385681 ms</span>
+                <span class="method-start">128531 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">goToMainPage</span>
-                <span class="method-start">399384 ms</span>
+                <span class="method-start">134147 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">ValidRemoveMember</span>
-                <span class="method-start">414594 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">428967 ms</span>
-              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.test.RainbowProject.TestDeleteBubble</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">openBrowser</span>
-                <span class="method-start">429192 ms</span>
+                <span class="method-start">134230 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">goToMainPage</span>
-                <span class="method-start">443377 ms</span>
+                <span class="method-start">155833 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">InValidDeleteBubble</span>
-                <span class="method-start">453515 ms</span>
+                <span class="method-start">156313 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">goToMainPage</span>
-                <span class="method-start">464806 ms</span>
+                <span class="method-start">156315 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">ValidDeleteBubble</span>
-                <span class="method-start">474870 ms</span>
+                <span class="method-start">156599 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">486103 ms</span>
+                <span class="method-start">156602 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.test.RainbowProject.TestLogin</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDownReport</span>
-                <span class="method-start">486374 ms</span>
+                <span class="method-start">162551 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -1,6 +1,5 @@
 package com.test.RainbowProject;
 
-import org.openqa.selenium.interactions.Actions;
 import org.testng.AssertJUnit;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -11,71 +10,62 @@ import com.aventstack.extentreports.Status;
 
 import Locaters.LocatersRemoveMember;
 public class TestRemoveMembers extends RemoveMemberPage{
-
 	@BeforeClass
-	public void openBrowser() throws InterruptedException {
+	public void openBrowser() {
 
-		setUp();
-		Thread.sleep(5000);
-		loginSystem();
+	    setUp();
+	    loginSystem();
+	    waitUrlContains("home");
 	}
 	
-	@BeforeMethod
-	public void goToMainPage() throws InterruptedException {
-		Thread.sleep(10000);
-		clickOnBubbleOption();
-		Thread.sleep(5000);
-		clickOnBubbleInTheList();
+	@BeforeMethod(alwaysRun = true)
+	public void goToMainPage() {
+
+	    clickOnBubbleOption();
+	    clickOnBubbleInTheList();
+	    waitVisible(LocatersRemoveMember.MembersLabel);
 	}
-	
 	
 	@Test
-	public void ValidRemoveMember() throws InterruptedException { 
+	public void ValidRemoveMember() {
+	    test = extent.createTest("Remove Member Test");
 
-		test = extent.createTest("Remove Member Test");
+	    try {
+	        test.log(Status.INFO, "Starting Remove Member test");
 
-		try {
-			test.log(Status.INFO, "Starting Remove Member test");
+	        String before = getText(LocatersRemoveMember.MembersLabel);
+	        int countBefore = Integer.parseInt(before.replaceAll("\\D+", ""));
 
-			Thread.sleep(3000);
-			String before =driver.findElement(LocatersRemoveMember.MembersLabel).getText();
-			int countBefore =Integer.parseInt(before.replaceAll("\\D+", ""));
-			
-			Actions actions = new Actions(driver);
-			Thread.sleep(2000);
-			actions.moveToElement(driver.findElement(LocatersRemoveMember.FirstMember)).perform();
-			Thread.sleep(2000);
+	        hoverOnElement(LocatersRemoveMember.FirstMember);
 
-			clickButton(LocatersRemoveMember.FirstMemberThreeDots);
-			test.log(Status.INFO, "Clicked 'Member Three Dots' button");
-			Thread.sleep(2000);
+	        clickButton(LocatersRemoveMember.FirstMemberThreeDots);
+	        test.log(Status.INFO, "Clicked 'Member Three Dots' button");
 
+	        clickButton(LocatersRemoveMember.RemoveMemberButton);
+	        test.log(Status.INFO, "Clicked 'Remove Member' Button");
 
-			clickButton(LocatersRemoveMember.RemoveMemberButton);
-			test.log(Status.INFO, "clicked 'Remove Member' Button");
-			Thread.sleep(2000);
+	        waitTextToChange(LocatersRemoveMember.MembersLabel, before);
 
-			Thread.sleep(3000);
+	        String after = getText(LocatersRemoveMember.MembersLabel);
+	        int countAfter = Integer.parseInt(after.replaceAll("\\D+", ""));
 
-			String after = driver.findElement(LocatersRemoveMember.MembersLabel).getText();
-			int countAfter = Integer.parseInt(after.replaceAll("\\D+", ""));
+	        test.log(Status.INFO, "Members before Remove: " + countBefore);
+	        test.log(Status.INFO, "Members after Remove: " + countAfter);
 
-			test.log(Status.INFO, "Members before Remove: " + countBefore);
-			test.log(Status.INFO, "Members after Remove: " + countAfter);
-			
-			AssertJUnit.assertEquals(countBefore - 1, countAfter);
-			test.log(Status.PASS, "Remove member is done");
+	        AssertJUnit.assertEquals(countBefore - 1, countAfter);
 
-		} catch (AssertionError e) {
+	        test.log(Status.PASS, "Remove member is done");
 
-			test.log(Status.FAIL, "Test failed: " + e.getMessage());
-			throw e;
+	    } catch (AssertionError e) {
 
-		} catch (Exception e) {
+	        test.log(Status.FAIL, "Test failed: " + e.getMessage());
+	        throw e;
 
-			test.log(Status.FAIL, "Test failed because of exception: " + e.getMessage());
-			throw e;
-		}
+	    } catch (Exception e) {
+
+	        test.log(Status.FAIL, "Test failed because of exception: " + e.getMessage());
+	        throw e;
+	    }
 	}
 	
 	

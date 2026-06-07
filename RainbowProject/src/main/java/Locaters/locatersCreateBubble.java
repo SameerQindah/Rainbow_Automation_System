@@ -21,3 +21,4 @@ public class locatersCreateBubble extends locaersLogin {
 	public static final By AllBubblesLabel =By.id("rooms-title");
 	public static final By closeButton =By.xpath("//roomcreate[contains(@class,'c-modal')]//button[@aria-label='Close']");
 }
+

@@ -7,123 +7,129 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
+
 import Locaters.locaterInviteMember;
 
 public class TestInviteMember extends InviteMemberPage {
 
 	@BeforeClass
-	public void openBrowser() throws InterruptedException {
+	public void openBrowser() {
 
-		setUp();
-		Thread.sleep(5000);
-		loginSystem();
+	    setUp();
+	    loginSystem();
+	    waitUrlContains("home");
 	}
 	
-	@BeforeMethod
-	public void goToMainPage() throws InterruptedException {
-		Thread.sleep(10000);
-		clickOnBubbleOption();
-		Thread.sleep(5000);
-		clickOnBubbleInTheList();
+	@BeforeMethod(alwaysRun = true)
+	public void goToMainPage() {
+
+	    clickOnBubbleOption();
+	    clickOnBubbleInTheList();
+	    waitVisible(locaterInviteMember.MembersLabel);
 	}
 
-	
-	@Test
-	public void ValidInviteMember() throws InterruptedException { 
-
-		test = extent.createTest("Invite Member Test");
-
-		try {
-			test.log(Status.INFO, "Starting Invite Member test");
-
-			Thread.sleep(3000);
-			String before =driver.findElement(locaterInviteMember.MembersLabel).getText();
-			int countBefore =Integer.parseInt(before.replaceAll("\\D+", ""));
-			
-			clickButton(locaterInviteMember.AddMemberButton);
-			test.log(Status.INFO, "Clicked 'Add Member' button");
-			Thread.sleep(2000);
-
-
-			TextElement("salma g", locaterInviteMember.SearchMembers);
-			test.log(Status.INFO, "Entered member name");
-			Thread.sleep(2000);
-			
-			clickButton(locaterInviteMember.SearchResultMember);
-			test.log(Status.INFO, "Clicked Member selected to invite");
-			Thread.sleep(2000);
-
-			clickButton(locaterInviteMember.ApplyButton);
-			test.log(Status.INFO, "Clicked Apply Button");
-
-			Thread.sleep(3000);
-
-			String after = driver.findElement(locaterInviteMember.MembersLabel).getText();
-			int countAfter = Integer.parseInt(after.replaceAll("\\D+", ""));
-
-			test.log(Status.INFO, "Members before invite: " + countBefore);
-			test.log(Status.INFO, "Members after invite: " + countAfter);
-			
-			AssertJUnit.assertEquals(countBefore + 1, countAfter);
-			test.log(Status.PASS, "Invite member is done");
-
-		} catch (AssertionError e) {
-
-			test.log(Status.FAIL, "Test failed: " + e.getMessage());
-			throw e;
-
-		} catch (Exception e) {
-
-			test.log(Status.FAIL, "Test failed because of exception: " + e.getMessage());
-			throw e;
-		}
-	}
 	
 	@Test
-	public void InValidInviteMember() throws InterruptedException { 
+	public void ValidInviteMember() {
 
-		test = extent.createTest("Cancel Invite Member Test");
+	    test = extent.createTest("Invite Member Test");
 
-		try {
-			test.log(Status.INFO, "Starting Cancel Invite Member test");
+	    try {
+	        test.log(Status.INFO, "Starting Invite Member test");
 
-			Thread.sleep(3000);
-			String before =driver.findElement(locaterInviteMember.MembersLabel).getText();
-			int countBefore =Integer.parseInt(before.replaceAll("\\D+", ""));
-			
-			clickButton(locaterInviteMember.AddMemberButton);
-			test.log(Status.INFO, "Clicked 'Add Member' button");
-			Thread.sleep(2000);
+	        waitVisible(locaterInviteMember.MembersLabel);
+
+	        String before = getText(locaterInviteMember.MembersLabel);
+	        int countBefore = Integer.parseInt(before.replaceAll("\\D+", ""));
+
+	        clickButton(locaterInviteMember.AddMemberButton);
+	        test.log(Status.INFO, "Clicked 'Add Member' button");
+
+	        waitVisible(locaterInviteMember.SearchMembers);
+
+	        TextElement("salma g", locaterInviteMember.SearchMembers);
+	        test.log(Status.INFO, "Entered member name");
+
+	        clickButton(locaterInviteMember.SearchResultMember);
+	        test.log(Status.INFO, "Clicked Member selected to invite");
+
+	        clickButton(locaterInviteMember.ApplyButton);
+	        test.log(Status.INFO, "Clicked Apply Button");
+
+	        waitTextToChange(locaterInviteMember.MembersLabel, before);
+
+	        String after = getText(locaterInviteMember.MembersLabel);
+	        int countAfter = Integer.parseInt(after.replaceAll("\\D+", ""));
+
+	        test.log(Status.INFO, "Members before invite: " + countBefore);
+	        test.log(Status.INFO, "Members after invite: " + countAfter);
+
+	        AssertJUnit.assertEquals(countBefore + 1, countAfter);
+
+	        test.log(Status.PASS, "Invite member is done");
+
+	    } catch (AssertionError e) {
+
+	        test.log(Status.FAIL, "Test failed: " + e.getMessage());
+	        throw e;
+
+	    } catch (Exception e) {
+
+	        test.log(Status.FAIL, "Test failed because of exception: " + e.getMessage());
+	        throw e;
+	    }
+	}
+	
+	@Test
+	public void InValidInviteMember() {
+
+	    test = extent.createTest("Cancel Invite Member Test");
+
+	    try {
+	        test.log(Status.INFO, "Starting Cancel Invite Member test");
+
+	        waitVisible(locaterInviteMember.MembersLabel);
+
+	        String before = getText(locaterInviteMember.MembersLabel);
+	        int countBefore = Integer.parseInt(before.replaceAll("\\D+", ""));
+
+	        clickButton(locaterInviteMember.AddMemberButton);
+	        test.log(Status.INFO, "Clicked 'Add Member' button");
+
+	        waitVisible(locaterInviteMember.SearchMembers);
+
+	        TextElement("salma g", locaterInviteMember.SearchMembers);
+	        test.log(Status.INFO, "Entered member name");
 
 
-			TextElement("salma g", locaterInviteMember.SearchMembers);
-			test.log(Status.INFO, "Entered member name");
-			Thread.sleep(2000);
-			
-			clickButton(locaterInviteMember.SearchResultMember);
-			test.log(Status.INFO, "Clicked Member selected to invite");
-			Thread.sleep(2000);
+	        clickButton(locaterInviteMember.SearchResultMember);
+	        test.log(Status.INFO, "Clicked Member selected to invite");
 
-			clickButton(locaterInviteMember.CancelButton);
-			test.log(Status.INFO, "Clicked Cancel Button");
+	        clickButton(locaterInviteMember.CancelButton);
+	        test.log(Status.INFO, "Clicked Cancel Button");
 
-			String after = driver.findElement(locaterInviteMember.MembersLabel).getText();
-			int countAfter = Integer.parseInt(after.replaceAll("\\D+", ""));
-			Thread.sleep(3000);
+	        waitVisible(locaterInviteMember.MembersLabel);
 
-			AssertJUnit.assertEquals(countBefore , countAfter);
-			test.log(Status.PASS, "Cancel Invite member is done");
+	        String after = getText(locaterInviteMember.MembersLabel);
+	        int countAfter = Integer.parseInt(after.replaceAll("\\D+", ""));
 
-		} catch (AssertionError e) {
+	        test.log(Status.INFO, "Members before cancel invite: " + countBefore);
+	        test.log(Status.INFO, "Members after cancel invite: " + countAfter);
 
-			test.log(Status.FAIL, "Test failed: " + e.getMessage());
-			throw e;
+	        AssertJUnit.assertEquals(countBefore, countAfter);
 
-		} catch (Exception e) {
+	        test.log(Status.PASS, "Cancel Invite member is done");
 
-			test.log(Status.FAIL, "Test failed because of exception: " + e.getMessage());
-			throw e;
-		}
+	    } catch (AssertionError e) {
+
+	        test.log(Status.FAIL, "Test failed: " + e.getMessage());
+	        throw e;
+
+	    } catch (Exception e) {
+
+	        test.log(Status.FAIL, "Test failed because of exception: " + e.getMessage());
+	        throw e;
+	    }
 	}
 	
 	
